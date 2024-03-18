@@ -1,0 +1,271 @@
+---
+title: "WNBA Anaylsis"
+output:
+---
+
+Salary data: HerHoopStats (2024 salaries, 2024 stats)
+Team roster: ESPN 
+Downloaded in January 
+
+```{r}
+library(tidyverse)
+```
+
+Load our two tables
+```{r}
+wnba_salaries <- read_csv("data/wnba_salaries.csv")
+wnba_teams <- read_csv("data/wnba_teams.csv")
+```
+
+Practice joins
+```{r}
+anti_join(wnba_salaries, wnba_teams, by = c("name" = "player_name"))
+
+# Isablle Harrison and Lou Lopez Senechal are not on team rosters, but are not on teams rosters (but have salaries?)
+
+anti_join(wnba_teams, wnba_salaries, by = c("player_name" = "name"))
+
+#Asia (AD) Durr doesn't have a salary according to the data but is on a team (Dream)
+```
+
+Combine the tables 
+```{r}
+full_join(wnba_teams, wnba_salaries, by = c("player_name" = "name"))
+
+#can also do another way
+wnba_team_salaries <- wnba_teams %>% full_join(wnba_salaries, by = c("player_name" = "name"))
+
+#can do anaylsis from this function
+full_join(wnba_teams, wnba_salaries, by = c("player_name" = "name")) %>% 
+  arrange(desc(contract_amt))
+```
+
+*Homework 2/19*
+
+Which team has the highest average salary?
+New York Liberty is the team with the highest average salary with $129,010.10 average contract amount. 
+```{r}
+wnba_team_salaries %>% 
+  filter(is.na(team))
+
+wnba_team_salaries %>% 
+  group_by(team) %>% 
+  filter(!is.na(team)) %>% 
+  arrange(desc(contract_amt)) %>% 
+  distinct(team, contract_amt) %>% 
+  arrange(desc(contract_amt))
+# i'm not sure if this works 
+
+wnba_team_salaries %>% 
+  group_by(team) %>% 
+  filter(!is.na(team), !is.na(contract_amt)) %>% 
+  summarise(avg_salary = mean(contract_amt)) %>% 
+  arrange(desc(avg_salary))
+#i think this is the right code
+
+###LIZ: yes, the second one! just a note: when you use functions such as mean() or sum() you can add the na.rm=T argument so that you can eliminate the filter function (the only benefit being that your code is shorter):
+wnba_team_salaries %>% 
+  group_by(team) %>% 
+  summarise(avg_salary = mean(contract_amt, na.rm=T)) %>% 
+  arrange(desc(avg_salary))
+```
+
+
+What team attempts the most field goals in a game?
+The Los Angeles Sparks had the most attempted field goals at 89.6 attempts across it's players. 
+```{r}
+wnba_team_salaries %>% 
+  filter(is.na(field_goals_attempted))
+# 9 rows of data have N/A for field goals made. 
+
+wnba_team_salaries %>% 
+  filter(is.na(team))
+# 22 N/A values for teams in data set
+
+wnba_team_salaries %>% 
+  group_by(team) %>% 
+  filter(!is.na(field_goals_attempted), !is.na(team)) %>% 
+  summarise(field_goals_attempts = sum(field_goals_attempted)) %>% 
+  arrange(desc(field_goals_attempts))
+#LA Sparks take the most field goal attempts. 
+
+wnba_team_salaries %>% 
+  group_by(team) %>% 
+  filter(!is.na(field_goals_attempted), !is.na(team)) %>% 
+  summarise(avgfield_goals_attempts = mean(field_goals_attempted)) %>% 
+  arrange(desc(avgfield_goals_attempts))
+#Dallas Wings has the highest field goal attempt average.
+```
+
+
+Which team is the best rebounding team in the league?
+Dallas Wings is the best rebounding team in the WNBA with a total of 43.2 rebounds roughly in the data set and an average of 4.32 rebounds per player on the team that gets rebounds. 
+```{r}
+wnba_team_salaries %>% 
+  filter(is.na(total_rebounds))
+# 9 N/A values for total rebounds in the data set 
+
+wnba_team_salaries %>% 
+  filter(is.na(team))
+# 22 N/A values for teams in data set
+
+wnba_team_salaries %>% 
+  group_by(team) %>% 
+  filter(!is.na(team), !is.na(total_rebounds)) %>% 
+  summarise(avg_rebounds = mean(total_rebounds)) %>% 
+  arrange(desc(avg_rebounds))
+#Dallas Wings had the highest rebound average with 4.32 rebounds. 
+
+wnba_team_salaries %>% 
+  group_by(team) %>% 
+  filter(!is.na(team), !is.na(total_rebounds)) %>% 
+  summarise(tot_rebounds = sum(total_rebounds)) %>% 
+  arrange(desc(tot_rebounds))
+#Dallas Wings had the highest total rebounds with 43.2 rebounds. 
+```
+
+
+What percentage of all players come from countries other than the US?
+20.14% of all players in the data set with values in the country column come from countries other than the US. 
+```{r}
+wnba_team_salaries %>% 
+  filter(country != "USA")
+# 27 players are from countries outside of the USA.  
+
+wnba_team_salaries %>% 
+  filter(country == "USA") 
+# 134 players are from USA.
+
+wnba_team_salaries %>% 
+  filter(is.na(country)) 
+# 2 players have N/A values for their country. 
+
+(27/134)*100
+# I am not sure if there is a better way to do this? 
+
+###LIZ: that is a perfectly good way to calculate the percentage. However, your denominator should be total players, not US players, since the question is "percentage of all players": 
+(27/164)*100
+```
+
+
+Which college produces the best players?
+Because best players is subjective, I assumed the best players are the players who are chosen to be starters during games. The college with the most alumnae who have started in the most games in the data set is Connecticut with 317 games. If we wanted to go strictly by points, alumnae from Connecticut scored the most points in the data set with the sum of the average points each player makes at a total of 134.2 points. I think it's safe to say Connecticut produces the best WNBA players.  
+```{r}
+wnba_team_salaries %>% 
+  filter(is.na(college))
+# 11 entries have N/A values in the college column. 
+
+wnba_salaries %>% 
+  filter(games_start == 0)
+# 58 players never start in games. 
+
+wnba_team_salaries %>% 
+  filter(!is.na(college)) %>% 
+  group_by(college) %>% 
+  summarise(tot_games_started = sum(games_start)) %>% 
+  arrange(desc(tot_games_started))
+# Connecticut alumnae in the WNBA has started in the most games at 317 games total starting. 
+
+wnba_team_salaries %>% 
+  filter(!is.na(college), !is.na(points)) %>% 
+  group_by(college) %>% 
+  summarise(tot_points = sum(points)) %>% 
+  arrange(desc(tot_points))
+# Players who graduated from Connecticut gained the most points in the WNBA for this data set. 
+```
+
+
+Ask and answer three of your own questions.
+
+1. Which college has the largest number of players in the WNBA?
+Connecticut has the largest number of players in the WNBA, with 16 players.
+```{r}
+wnba_team_salaries %>% 
+  filter(!is.na(college)) %>% 
+  group_by(college) %>% 
+  count() %>% 
+  arrange(desc(n))
+
+###LIZ: you can make this a little more efficient; put `college` in the count() function and eliminate group_by():
+wnba_team_salaries %>% 
+  filter(!is.na(college)) %>% 
+  count(college) %>% 
+  arrange(desc(n))
+```
+
+2. Which college had the most players drafted in a single year? 
+In 2019, Notre Dame has 5 players get drafted into the WNBA.
+```{r}
+wnba_team_salaries %>% 
+  filter(is.na(draft_year))
+# 2 players have no information for the year they were drafted. 
+
+wnba_team_salaries %>% 
+  filter(!is.na(college), !is.na(draft_year)) %>% 
+  group_by(college, draft_year) %>% 
+  count(draft_year) %>% 
+  distinct(college)
+#ok this did not work
+
+wnba_team_salaries %>% 
+  filter(!is.na(college), !is.na(draft_year)) %>% 
+  group_by(college, draft_year) %>% 
+  mutate(draft_picks = count(draft_year)) %>% 
+  distinct(draft_year, college)
+#this did not work either
+
+wnba_team_salaries %>% 
+  filter(!is.na(draft_year)) %>% 
+  group_by(draft_year) %>% 
+  count() %>% 
+  arrange(desc(n)) 
+# 2023 had the most players drafted. 
+
+wnba_team_salaries %>% 
+  filter(!is.na(draft_year), !is.na(college), draft_year == "2023") %>% 
+  group_by(draft_year, college) %>% 
+  count() %>% 
+  arrange(desc(n)) 
+# In 2023, South Carolina has the most draft picks with 4 players drafted into the WNBA. 
+
+wnba_team_salaries %>% 
+  filter(!is.na(draft_year), !is.na(college)) %>% 
+  group_by(draft_year, college) %>% 
+  count() %>% 
+  arrange(desc(n))
+# In 2019, Notre Dame has 5 players get drafted into the WNBA. 
+
+###LIZ: same comment as above: remove group_by() and just use count():
+wnba_team_salaries %>% 
+  filter(!is.na(draft_year), !is.na(college)) %>% 
+  count(draft_year, college) %>% 
+  arrange(desc(n))
+```
+
+3. What WNBA team had the most turnovers?
+The Los Angeles Sparks had the largest amount of turnovers with 17.7 turnovers among all players; however, The Phoenix Suns had the highest average of turnovers for each player with an average of 1.5 turnovers a game.
+ 
+```{r}
+wnba_team_salaries %>% 
+  filter(is.na(turnovers))
+#9 players have N/A values for turnovers. 
+
+wnba_team_salaries %>% 
+  filter(is.na(team))
+# 22 players have no team in the data. 
+
+wnba_team_salaries %>% 
+  filter(!is.na(team), !is.na(turnovers)) %>% 
+  group_by(team) %>% 
+  summarise(tot_turnovers = sum(turnovers)) %>% 
+  arrange(desc(tot_turnovers))
+# The Los Angeles Sparks had the largest amount of turnovers with a 17.7 turnover rate among all players. 
+
+wnba_team_salaries %>% 
+  filter(!is.na(team), !is.na(turnovers)) %>% 
+  group_by(team) %>% 
+  summarise(avg_turnovers = mean(turnovers)) %>% 
+  arrange(desc(avg_turnovers))
+# The Phoenix Suns had the highest average of turnovers with an average of 1.5 turnovers a game.
+```
+

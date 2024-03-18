@@ -1,0 +1,159 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+# don't need to run this code again
+install.packages("tidyverse")
+```
+
+We load libraries at the beginning of every script
+
+```{r}
+library(tidyverse)
+```
+
+Load some data
+
+```{r}
+weather <- read_csv("data/weather_events.csv")
+```
+
+Main tidyverse functions
+
+```{r}
+# SORTING FUNCTION
+weather %>% arrange(desc(date))
+
+weather %>% arrange(desc(injuries))
+
+# FILTERING 
+weather %>% filter(type== "tornado") %>% arrange(desc(fatalities))
+
+weather %>% filter(fatalities > 0)
+
+# operators
+# ==
+# !=
+# >, <, >=, <=
+# AND, OR: &, |
+
+weather %>% filter(type == "tornado" & fatalities > 0)
+
+weather %>% filter(type == "tornado" | type == "wind")
+
+# GROUPING
+weather %>% group_by(type) %>% summarise(total_injuries = sum(injuries)) %>% arrange(desc(total_injuries))
+```
+
+**Homework 1/25:**
+
+1.  What was the most common weather event type in your home state? *or* Which weather event happened most in Illinois?
+
+    Wind was the most common weather event in Illinois in this data set. 
+
+```{r}
+weather %>% filter(state == "IL") %>% 
+  group_by (type) %>% 
+  summarise(number_of_events = n()) %>%
+  arrange(desc(number_of_events))
+  
+```
+
+2.  How many injuries and fatalities were associated with it? *or* How many injuries did Illinois have regarding wind weather events?
+
+    There were 659 total combined injuries and fatalities listed in the data from wind events in Illinois.
+
+```{r}
+#ATTEMPTS
+# weather %>% filter(state == "IL" & type == "wind") %>% summarise(numbers_of_events = n())
+
+# weather %>% filter(state == "IL" & type == "wind") %>%  group_by (type) %>% summarise(total_injfat = sum(injuries & fatalities))
+
+weather %>% 
+  filter(state == "IL" & type == "wind") %>% 
+  group_by (type) %>% 
+  summarise(total_injfat = sum(injuries, fatalities)) 
+
+
+```
+
+```{r}
+#CHECK WORK
+#SUM OF INJURIES IN IL FROM WIND = 628
+weather %>% 
+  filter(state == "IL" & type == "wind") %>% 
+  group_by (type) %>% 
+  summarise(total_inj = sum(injuries)) 
+
+#SUM OF FATALITIES IN IL FROM WIND = 31
+weather %>% 
+  filter(state == "IL" & type == "wind") %>% 
+  group_by (type) %>% 
+  summarise(total_fat = sum(fatalities)) 
+```
+
+3.  Which weather event type has the highest fatality rate?
+
+    The weather event type with the highest number of fatalities was tornado with 6,008 fatalities.
+
+```{r}
+weather %>% 
+  group_by(type) %>% 
+  summarise(total_fat = sum(fatalities)) %>% 
+  arrange(desc(total_fat))
+
+```
+
+```{r}
+# CHECKING WORK
+weather %>% filter(type == "tornado") %>% summarise(total_fat = sum(fatalities))
+
+weather %>% filter(type == "wind") %>% summarise(total_fat = sum(fatalities))
+
+weather %>% filter(type == "hail") %>% summarise(total_fat = sum(fatalities))
+```
+
+4.  Which county has the most weather events? (use `cnty1_fips`)
+
+    County 31 had the most weather events with 3,011,275,773 weather events present in the data.
+
+```{r}
+weather %>% 
+  group_by (cnty1_fips) %>% 
+  summarise(total = sum(event_num)) %>% 
+  arrange(desc(total))
+```
+
+```{r}
+#CHECK WORK
+weather %>% 
+  group_by (cnty1_fips) %>% 
+  summarise(total = sum(event_num)) %>% 
+  arrange(total)
+```
+
+5.  Are weather events increasing over time?
+
+    Yes, weather events are increasing over time with few years averaging outside of the gradual increase.
+
+```{r}
+# ATTEMPT
+# weather %>% group_by(year) %>% summarise (avg = avg(event_num))
+
+# plot(weather %>% group_by (year) %>% summarise(avg = mean(event_num))) 
+
+weather %>%
+  group_by (year) %>% 
+  summarise(avg = mean(event_num)) 
+
+```
+
+```{r}
+#CHECK
+weather %>%
+  group_by (year) %>% 
+  summarise(avg = mean(event_num)) %>% 
+  arrange(desc(avg))
+```

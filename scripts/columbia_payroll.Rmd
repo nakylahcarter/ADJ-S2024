@@ -1,0 +1,436 @@
+---
+title: "PROJECT 1"
+output: html_notebook
+---
+
+Columbia City Finance Main Page: https://como.finance.socrata.com/#!/dashboard
+Detailed Payroll Data Page: https://como.finance.socrata.com/#!/dashboard
+Years Requested: 2021, 2022, 2023
+Dates in Data: The data is from October 10, 2020 to September 9, 2023.
+Date Downloaded: March 6, 2024
+
+From data dictionary: One row of this data set represents one payment, by the city of Columbia, to one employee on one day. To discover the sum of any given employee's pay on any given day, one must add together payments with the same check number, and on the same day. 
+
+Load libraries
+```{r}
+library(tidyverse)
+library(lubridate)
+library(readxl)
+```
+
+Import data
+```{r}
+payroll2021 <- read_csv("data/checkbook-data-2021.csv")
+payroll2022 <- read_csv("data/checkbook-data-2022.csv")
+payroll2023 <- read_csv("data/checkbook-data-2023.csv")
+```
+
+Check data
+```{r}
+glimpse(payroll2021)
+#373,699 rows
+
+glimpse(payroll2022)
+#366,057 rows
+
+glimpse(payroll2023)
+#375,566 rows
+
+?col_types
+#Change date columns 
+payroll2021 <- read_csv("data/checkbook-data-2021.csv", col_types = "cccccddddddc")
+payroll2022 <- read_csv("data/checkbook-data-2022.csv", col_types = "cccccddddddc")
+payroll2023 <- read_csv("data/checkbook-data-2023.csv", col_types = "cccccddddddc")
+
+#check to make sure it worked
+glimpse(payroll2021)
+
+```
+
+Fix Dates
+```{r}
+payroll2021 <- 
+  payroll2021 %>%  mutate(check_date = str_sub(`Check Date`, 1,10), .after=`Check Date`) %>% 
+  mutate(check_date_proper= ymd(check_date), .after = check_date)
+
+payroll2022 <- 
+  payroll2022 %>%  mutate(check_date = str_sub(`Check Date`, 1,10), .after=`Check Date`) %>% 
+  mutate(check_date_proper= ymd(check_date), .after = check_date)
+
+
+payroll2023 <- 
+  payroll2023 %>%  mutate(check_date = str_sub(`Check Date`, 1,10), .after=`Check Date`) %>% 
+  mutate(check_date_proper= ymd(check_date), .after = check_date)
+
+```
+
+Changing any column names for better understanding. From data dictionary:
+"This column refers to not a "department" as you'd expect, but instead the position of the person who supervises/manages the employee in any given row. Thusly, it is a also a title, but of the person's superior. One should not use this column to create categories for types of work broadly, such as "transportation" or "airport" workers." 
+```{r}
+glimpse(payroll2021)
+
+#Change Department title to reflect true meaning. 
+payroll2021 <- rename(payroll2021, supervisor_position = Department)
+payroll2022 <-rename(payroll2022, supervisor_position = Department)
+payroll2023 <-rename(payroll2023, supervisor_position = Department)
+
+?rbind
+
+#Make one large data frame of all three years into one dataset.
+payroll2021_2022_2023 <- rbind(payroll2021, payroll2022, payroll2023)
+# 1,115,322 rows, this adds up so everything transferred properly. 
+
+glimpse(payroll2021_2022_2023)
+
+#If I wanted to anaylze by specific years
+payroll2021_2022_2023 %>% 
+  separate_wider_delim(cols=check_date_proper, delim="-", names=c("year","month","day"), cols_remove = FALSE)
+
+#make permanent
+payroll2021_2022_2023 <- payroll2021_2022_2023 %>% 
+  separate_wider_delim(cols=check_date_proper, delim="-", names=c("year","month","day"), cols_remove = FALSE)
+
+```
+
+Integrity Checks
+```{r}
+#Names
+payroll2021_2022_2023 %>% 
+  filter(is.na(`Last Name`))
+
+payroll2021_2022_2023 %>% 
+  filter(is.na(`First Name`))
+#No N/A values for first or last name
+
+payroll2021_2022_2023 <- payroll2021_2022_2023 %>% 
+  unite("full_name", `First Name`:`Last Name`, remove = FALSE) 
+
+payroll2021_2022_2023 %>% 
+  distinct(full_name)
+#There are 3758 names in the data
+
+#Total Pay, finding the range of the pay in my data
+range(payroll2021_2022_2023$`Total Pay`)
+#-4939.6 to 427611.5
+
+range(payroll2021_2022_2023$`Base Pay`)
+# -4389.12  to 8569.60. How is someone's base pay zero? Why the base pay is negative is cited below: 
+
+#After consulting with data dictionary: According to the city's data experts, any value that is negative is (A) indicative of an initial error on the part of the city that resulted in the reclaiming of the rewarded compensation, but more commonly (B) is the result of an employee ceasing employment with the city. In this latter case, pre-planned wages are turned negative, as technically, their cancellation represents a loss for the employee. 
+
+# I don't understand why there are zeros in the base pay column? The data dictionary defines what is said for the cases of negative values, but how does someone have a 0 base pay? I'd need to call the city for more information. 
+
+#The data dictionary says the total pay is the sum of base pay, overtime pay and employer paid benefits. If this is true, base pay can be found by subtracting the overtime pay and employer paid benefits from eachother? I would want to ask someone before assuming this. 
+
+range(payroll2021_2022_2023$`Overtime Pay`)
+# -5837.79 to  2681.01
+
+range(payroll2021_2022_2023$`Other Pay`)
+# -1269.6 to 427611.5
+
+range(payroll2021_2022_2023$`Employer Paid Benefits`)
+# -4939.60 to 16070.35
+
+#Check date range
+range(payroll2021_2022_2023$check_date_proper)
+#The data is from October 10, 2020 to September 9, 2023.
+
+#How many unique check numbers are there?
+payroll2021_2022_2023 %>% 
+  count(`Check Number`)
+# There are 765 check numbers that are 0, but according to the data dictionary: "This simply refers to those instances in which a check was not actually used, and the person was paid through methods like direct deposit or ACH transfers. In short, these values are more appropriately considered to be "N/A" or null."  
+
+
+#I wanted to make all Check Numbers that values were 0 to N/A instead to avoid confusion. I don't know how to do this. I don't think this worked?
+payroll2021_2022_2023 %>% mutate(`Check Number` = na_if(`Check Number`, "0.00"))
+payroll2021_2022_2023 %>% filter(is.na(`Check Number`))
+# I received an error message: "Can't convert `y` <character> to match type of `x` <double>."
+
+#More assessment
+payroll2021_2022_2023 %>% 
+  count(`Check Number`) %>% 
+  arrange(desc(n))
+# The Check Number 398168 has 111 entries. 
+
+payroll2021_2022_2023 %>% 
+  filter(`Check Number` == 398168)
+#Michael Griggs received a check on June 16, 2023 split up into 111 sections. 
+
+#total pay// To discover the sum of any given employee's pay on any given day, one must add together payments with the same check number, and on the same day. A lot of it is small insurance payments. 
+
+payroll2021_2022_2023 %>% 
+  filter(`Check Number` == 398168) %>% 
+  summarise(sum_total = sum(`Total Pay`))
+#Michael Griggs received $9,669.39 of pay on June 16, 2023. He was the deputy city manager. 
+
+?summarise
+```
+
+Sorting by job titles
+```{r}
+payroll2021_2022_2023 %>% 
+  count(`Job Title`) %>% 
+  arrange(desc(n))
+
+payroll2021_2022_2023 %>% 
+  distinct(full_name, `Job Title`)
+#There are 3758 names in the data but 3849 unique combinations of full name and job title. Some people have multiple job titles at different times. 
+  
+payroll2021_2022_2023 %>% 
+  distinct(full_name, `Job Title`) %>% 
+  count(full_name, `Job Title`) 
+# 3,849 unique names in the data. 
+
+payroll2021_2022_2023 %>% 
+  distinct(full_name, `Job Title`) %>% 
+  group_by(full_name) %>% 
+  count(full_name) %>% 
+  arrange(desc(n)) %>% 
+  filter (n>1) 
+#There are 90 people who have different job positions they are paid for in the data set
+
+payroll2021_2022_2023 %>% 
+  filter(full_name == "RACHEL_SMITH") %>% 
+  distinct(`Job Title`, check_date_proper) %>% 
+  arrange(check_date_proper)
+#Rachel Smith was a Assistant Fire Marshal 1055 in 2020 but simultaneously a Senior Planner also.
+
+payroll2021_2022_2023 %>% 
+  filter(full_name == "RACHEL_SMITH") %>% 
+  distinct(`Job Title`, check_date_proper) %>% 
+  arrange(check_date_proper) %>% 
+  filter(`Job Title` == "FIRE RETIREE")
+
+payroll2021_2022_2023 %>% 
+  filter(full_name == "RACHEL_SMITH") %>% 
+  distinct(`Job Title`, check_date_proper) %>% 
+  arrange(check_date_proper) %>% 
+  filter(`Job Title` == "SENIOR PLANNER")
+#By August 2021, Smith retired from the fire department but was still doing Senior Planning Duties until July 2022. Her last retirement check on the data is Sept 2023. 
+```
+
+What are the subcategories?
+```{r}
+payroll2021_2022_2023 %>% 
+  count(Subcategory) %>% 
+  arrange(desc(n))
+# There are 58 distinct subcategory sections, with the most checks falling under social security (169871) and disability insurance. There a few categories with only one check entry over the 3 years of data: Books and Subscriptions, Fuel oil and lubricants, horticultural supplies, MO Family health council, non contractual services, printing, refunds and travel business. 
+
+payroll2021_2022_2023 %>% 
+  filter(Subcategory == "SOCIAL SECURITY") %>% 
+  distinct(full_name) 
+#There are 3428 people in the data who have gotten social security checks over the 3 years in the data set.
+
+payroll2021_2022_2023 %>% 
+  filter(Subcategory == "SOCIAL SECURITY" & year == 2021) %>% group_by(full_name) %>% 
+  select(full_name, `Job Title`, year)
+#In 2021, there were 2307 people in 2021 got social security checks 
+
+payroll2021_2022_2023 %>% 
+  filter(Subcategory == "SOCIAL SECURITY" & year == 2022) %>% group_by(full_name) %>% 
+  select(full_name, `Job Title`, year)
+#In 2021, there were 2250 people in 2021 got social security checks 
+
+payroll2021_2022_2023 %>% 
+  filter(Subcategory == "SOCIAL SECURITY" & year == 2023) %>% group_by(full_name) %>% 
+  select(full_name, `Job Title`, year)
+#In 2023, there were 2177 people in 2021 got social security checks 
+
+
+```
+
+
+Analysis: Generate some interesting questions in pursuit of possible ledes based on what you see in the data, and try to answer them.  Demonstrate your knowledge of the primary analysis tools -- sorting, filtering and grouping -- to answer those questions. Refer to the "primary functions for data analysis" in this tip sheet. Try to put 2-3 "findings" in sentence form, that you could put in a story.
+
+```{r}
+#total pay// To discover the sum of any given employee's pay on any given day, one must add together payments with the same check number, and on the same day. 
+payroll2021_2022_2023 %>% 
+  group_by(`Check Number`, full_name, check_date_proper) %>% 
+  summarise(sum_total = sum(`Total Pay`)) %>% 
+  arrange(check_date_proper)
+
+total_payroll_all_years <- payroll2021_2022_2023 %>% 
+  group_by(`Check Number`, full_name, check_date_proper) %>% 
+  summarise(sum_total = sum(`Total Pay`)) %>% 
+  arrange(check_date_proper)
+# i think this identifies the amount paid to an individual on a specific given day
+  
+total_payroll_all_years %>% arrange(desc(sum_total))
+# On April 12, 2022 Darrin Arends was paid the most money on one day with 427,611.54.
+
+payroll2021_2022_2023 %>% filter(full_name == "DARRIN_ARENDS" & check_date_proper == "2022-05-12") 
+#Darrin Arends was a fire division chief and is now a fire retiree throughout the 3 year data. On April 12, 2022 he received one single check as a Fire Retiree for 427,611.54.  
+
+total_payroll_all_years %>% arrange(sum_total)
+# It's hard to describe what the lowest is because there are so many negative values. 
+
+total_payroll_all_years %>% count(full_name) %>% arrange(desc(n))
+#this shows how many checks in the data set were given to each name
+
+total_payroll_all_years %>% filter(full_name == "CLAYTON_FARR") %>% arrange(desc(check_date_proper)) %>% distinct(check_date_proper)
+#no repeated dates , 117 entries 
+
+total_payroll_all_years %>% filter(full_name == "JERRY_JENKINS") %>% arrange(desc(check_date_proper)) %>% distinct(check_date_proper)
+#no repeated dates , 117 entries 
+
+```
+
+What subcategory has the most money paid out
+```{r}
+payroll2021_2022_2023 %>% 
+  group_by(Subcategory) %>% 
+  summarise(total_pay_subcategory = sum(`Total Pay`)) %>% 
+  arrange(desc(total_pay_subcategory))
+#Permanent Positions (228598263.10) has the highest amount of money paid in the data set and second is Retirement Benefit (43315114.17)
+
+payroll2021_2022_2023 %>% 
+  group_by(Subcategory) %>% 
+  filter(year == 2021) %>% 
+  summarise(total_pay_subcategory = sum(`Total Pay`)) %>% 
+  arrange(desc(total_pay_subcategory))
+#Permanent Positions (72498640.02) has the highest amount of money paid in the data set and second is Retirement Benefit (13611158.73)
+
+payroll2021_2022_2023 %>% 
+  group_by(Subcategory) %>% 
+  filter(year == 2022) %>% 
+  summarise(total_pay_subcategory = sum(`Total Pay`)) %>% 
+  arrange(desc(total_pay_subcategory))
+#Permanent Positions (77768600.90) has the highest amount of money paid in the data set and second is Retirement Benefit (14868020.39)
+
+payroll2021_2022_2023 %>% 
+  group_by(Subcategory) %>% 
+  filter(year == 2023) %>% 
+  summarise(total_pay_subcategory = sum(`Total Pay`)) %>% 
+  arrange(desc(total_pay_subcategory))
+#Permanent Positions (59040497.71) has the highest amount of money paid in the data set and second is Retirement Benefit (11547247.93)
+```
+
+Job titles
+```{r}
+payroll2021_2022_2023 %>% 
+  group_by(`Job Title`) %>% 
+  filter(year == 2023) %>% 
+  summarise(total_pay_jobtitle = sum(`Total Pay`)) %>% 
+  arrange(desc(total_pay_jobtitle))
+
+payroll2021_2022_2023 %>% 
+  group_by(`Job Title`) %>% 
+  filter(year == 2022) %>% 
+  summarise(total_pay_jobtitle = sum(`Total Pay`)) %>% 
+  arrange(desc(total_pay_jobtitle))
+
+payroll2021_2022_2023 %>% 
+  group_by(`Job Title`) %>% 
+  filter(year == 2021) %>% 
+  summarise(total_pay_jobtitle = sum(`Total Pay`)) %>% 
+  arrange(desc(total_pay_jobtitle))
+
+payroll2021_2022_2023 %>% 
+  group_by(`Job Title`) %>% 
+  summarise(total_pay_jobtitle = sum(`Total Pay`)) %>% 
+  arrange(desc(total_pay_jobtitle))
+
+#Police Officers - CPOA make the most money in the data set and fire retirees and police retirees are 2nd and 3rd respectively. 
+
+payroll2021_2022_2023 %>% 
+  distinct(full_name, `Job Title`) %>% 
+  count(`Job Title`) %>% 
+  arrange(desc(n))
+#This code chunk shows how many people have these positions over the course of 3 years 
+
+payroll2021_2022_2023 %>% 
+  filter(`Job Title` == "ELECTED MAYOR") %>% 
+  distinct(full_name)
+#In the three years in the data set, there were two elected mayors: Barbara Buffaloe and Brian Treece
+
+payroll2021_2022_2023 %>% 
+  filter(`Job Title` == "ELECTED MAYOR")
+```
+
+
+How was Darrin Amends able to receive the highest amount on a single day throughout the years of data from a single retirement check? The subcategory is "Drop Liab Fire". As defined by the data dictionary, Drop LIAB is a pension fund for police/firefighters in which they enter into a pre-retirement status but still work for the city. 
+```{r}
+#repeating this code chunk from above for clarity:
+
+total_payroll_all_years %>% arrange(desc(sum_total))
+# On April 12, 2022 Darrin Arends was paid the most money on one day with 427,611.54.
+
+payroll2021_2022_2023 %>% filter(full_name == "DARRIN_ARENDS") %>% distinct(`Job Title`)
+
+payroll2021_2022_2023 %>% filter(full_name == "DARRIN_ARENDS" & check_date_proper == "2022-05-12") 
+#Darrin Arends was a fire division chief and is now a fire retiree throughout the 3 year data. On April 12, 2022 he received one single check as a Fire Retiree for 427,611.54.  
+
+payroll2021_2022_2023 %>% filter(Subcategory == "DROP LIAB FIRE")
+#there are 5 people who received checks as fire retiree's, with two on the same day. I assume Brad Fraizer and Jennifer Reese both were in the same incident? Why are there total pay for the checks they received so much? Why is Darrin Arends check so much larger than the rest of the people who received checks under the subcategory "DROP LIAB FIRE"? 
+
+payroll2021_2022_2023 %>% filter(`Job Title` == "FIRE DIVISION CHIEF 56 HR") %>% distinct(full_name)
+#There were four division chiefs in the data set.
+
+payroll2021_2022_2023 %>% filter(full_name == "ERIC_CASZATT") %>% group_by(`Check Number`) %>% select(full_name, `Job Title`, Subcategory, check_date_proper) %>% arrange(check_date_proper) 
+#Eric Caszatt received 82 checks in three years
+
+payroll2021_2022_2023 %>% filter(full_name == "JOHN_METZ") %>% group_by(`Check Number`) %>% select(full_name, `Job Title`, Subcategory, check_date_proper) %>% arrange(check_date_proper) 
+#Eric Caszatt received 81 checks in three years
+
+payroll2021_2022_2023 %>% filter(full_name == "ANDREW_GRAY") %>% group_by(`Check Number`) %>% select(full_name, `Job Title`, Subcategory, check_date_proper) %>% arrange(check_date_proper) 
+# Gray received 82 checks in three years
+
+payroll2021_2022_2023 %>% filter(full_name == "DARRIN_ARENDS") %>% group_by(`Check Number`) %>% select(full_name, `Job Title`, Subcategory, check_date_proper) %>% arrange(check_date_proper) 
+#Eric Caszatt received 62 checks in three years
+
+total_payroll_all_years %>% filter(full_name == "ERIC_CASZATT")
+#Eric Caszatt was fire division chief 56 hour Oct 2020 until September 2023. His highest amount paid to him on a single day was $6721.99 on Oct. 9 2020.  
+
+
+total_payroll_all_years %>% filter(full_name == "ANDREW_GRAY")
+#Andrew Gray was fire division chief 56 hour Oct 2020 until September 2023. He tied for received the  most checks throughout his time as chief, but although he had the most checks given to him out of all fire division chiefs 56 hour in the three year data, his highest amount paid to him on a single day was $7673.01 on Oct. 9 2020.  
+
+#Former Columbia Fire Department Division Chief Darrin Arends received the highest amount of money in a single check in the three year data span from the Missouri Payroll data. Despite three other division chiefs holding his same title and receiving more checks than him in the same period-- with Andrew Gray, Eric Caszatt and John Metz  -- Arends was paid $427,611.54 for a single retirement check in April 2022. The subcategory the check was under is "DROP LIAB FIRE." Throughout the three years of data, Arrends is one of 5 fire employees who received checks under the subcategory, with his significantly higher than the rest. 
+
+```
+
+Analyzing overtime pay
+```{r}
+range(payroll2021_2022_2023$`Overtime Pay`)
+# -5837.79 to  2681.01
+
+payroll2021_2022_2023 %>% select(full_name,`Overtime Pay`, `Base Pay`, supervisor_position, `Job Title`, check_date_proper) %>% filter(`Overtime Pay` > 0) %>% arrange(desc(`Overtime Pay`))
+
+payroll2021_2022_2023 %>% select(full_name,`Overtime Pay`, supervisor_position, `Job Title`, check_date_proper) %>% filter(`Overtime Pay` > 0 & full_name == "MARIUS_JUNCU") %>% arrange(desc(`Overtime Pay`))
+
+payroll2021_2022_2023 %>% filter(full_name == "MARIUS_JUNCU") %>% distinct(`Check Number`)
+
+13/17
+
+payroll2021_2022_2023 %>% select(full_name,`Overtime Pay`, supervisor_position, `Job Title`, check_date_proper) %>% filter(`Overtime Pay` > 0 & full_name == "MARIUS_JUNCU") %>% summarise(ovrtime_tot = sum(`Overtime Pay`))
+
+# City employees who are employees in the police department and airport have the largest amount of overtime rates in the three year data frame. Police Chief Marius Juncu racked up $2681.01 in overtime in his check February 26, 2021, the highest amount of overtime in a single check in the data set. From October 2020 to March 2021, Juncu was given 13 checks that included overtime pay. These overtime portions of the 13 checks added to $21,681.65 in overtime pay. In the same time range, Juncu recieved 17 checks. This means 13 of his 17 checks, or 76.4% of his checks included overtime pay. The lowest amount of overtime pay he received was $134.05, after it jumps to $591.03 then the thousands. 
+
+
+```
+
+Who made the most in general year-to-year?
+```{r}
+payroll2021_2022_2023 %>% filter(year == 2021) %>% group_by(full_name) %>% summarise(sum_checks = sum(`Total Pay`)) %>% arrange(desc(sum_checks))
+
+payroll2021_2022_2023 %>% filter(full_name == "ROGER_ALLEN" & year == 2021) %>% distinct(`Job Title`)
+
+payroll2021_2022_2023 %>% filter(full_name == "ROGER_ALLEN" & year == 2021) %>% arrange(check_date_proper) %>% select(full_name, check_date_proper, `Job Title`, `Total Pay`) 
+
+payroll2021_2022_2023 %>% filter(full_name == "ROGER_ALLEN" & year == 2021) %>% arrange(desc(`Total Pay`)) %>% select(full_name, check_date_proper, `Job Title`, `Total Pay`) 
+
+#From Oct. 2020 to December 2021, Roger Allen was paid the most of any employee receiving checks from the state, with 420,409.28 paid to him during the time period. Allen received checks as a administrative technician for Columbia Police Department and retirement checks. I assume that Allen worked simultaneously as a police retiree and an administrative technician at the same time? )
+
+payroll2021_2022_2023 %>% filter(full_name == "ROGER_ALLEN" & year == 2021 & `Job Title` == "ADMINISTRATIVE TECHNICIAN II") %>% group_by(check_date_proper, `Check Number`) %>% summarise(tot_check = sum(`Total Pay`)) %>% arrange(desc(tot_check))
+
+payroll2021_2022_2023 %>% filter(full_name == "ROGER_ALLEN" & year == 20212 & `Job Title` == 	"POLICE RETIREE") %>% group_by(check_date_proper, `Check Number`) %>% summarise(tot_check = sum(`Total Pay`)) %>% arrange(desc(tot_check))
+#I don't know why this is showing up as nothing? 
+
+```
+
+2-3 "findings" in sentence form, that you could put in a story.
+1. Former Columbia Fire Department Division Chief Darrin Arends received the highest amount of money in a single check in the three year data span from the Missouri Payroll data. Despite three other division chiefs holding his same title and receiving more checks than him in the same period-- with Andrew Gray, Eric Caszatt and John Metz  -- Arends was paid $427,611.54 for a single retirement check in April 2022. The subcategory the check was under is "DROP LIAB FIRE." Throughout the three years of data, Arrends is one of 5 fire employees who received checks under the subcategory, with his significantly higher than the rest. 
+
+2. City employees who are employees in the police department and airport have the largest amount of overtime rates in the three year data frame. Police Chief Marius Juncu racked up $2681.01 in overtime in his check February 26, 2021, the highest amount of overtime in a single check in the data set. From October 2020 to March 2021, Juncu was given 13 checks that included overtime pay. These overtime portions of the 13 checks added to $21,681.65 in overtime pay. In the same time range, Juncu received 17 checks. This means 13 of his 17 checks, or 76.4% of his checks included overtime pay. The lowest amount of overtime pay he received was $134.05, after it jumps to $591.03 then the thousands. 
+
+3. From Oct. 2020 to December 2021, Roger Allen was paid the most of any employee receiving checks from the state, with 420,409.28 paid to him during the time period. Allen received checks as a administrative technician for Columbia Police Department and retirement checks.

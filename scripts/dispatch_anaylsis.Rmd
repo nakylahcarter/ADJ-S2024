@@ -1,0 +1,93 @@
+---
+title: "Columbia Dispatch"
+output: html_notebook
+---
+
+Columbia Police Dispatch:
+https://www.como.gov/CMS/911dispatch/police.php
+Downloaded 1/29/2024 8:43 a.m.
+1/1/2019 to 1/29/2024 
+This is what was requested, but we actually only got:
+1/29/2023 to 1/29/2024 
+
+```{r}
+library(tidyverse)
+library(lubridate)
+```
+
+Load the data
+```{r}
+dispatch <- read_csv("data/comodispatch.csv")
+```
+
+83,190 rows 
+1 row = 1 call that resulted in a dispatch
+
+Assessing the data
+```{r}
+dispatch %>% 
+  group_by(CallDateTime, Address) %>% 
+  summarise(n = n()) %>% 
+  filter(n >1) %>% 
+  arrange(desc(n))
+
+dispatch %>% 
+  filter(CallDateTime == "10/8/2023 2:08:54 PM")
+
+#find incident number
+dispatch %>% 
+  group_by(InNum) %>% 
+  summarise(n = n())
+
+  #you can get the same results using the the code below
+#count function finding incident number, essentially the same as group_by and summarise
+
+  dispatch %>% 
+  filter(InNum == "2023029401")
+```
+There are exact duplicates! - Call the city 
+
+Let's say we learned that exact duplicates are mistakes and should be removed:
+```{r}
+dispatch_unique <- dispatch %>% 
+  distinct()
+```
+
+Assessing every column:
+```{r}
+#InNum column assessment: 
+dispatch_unique %>% 
+  count(InNum) %>% 
+  arrange(desc(n))
+#still some duplicates 
+```
+
+Create a true data column for CallDateTime
+```{r}
+dispatch_unique %>% 
+  mutate(new_date = mdy_hms(CallDateTime)) %>% 
+  select(CallDateTime, new_date)
+
+dispatch_unique <- dispatch_unique %>% 
+  mutate(new_date = mdy_hms(CallDateTime))
+```
+
+What's the date range of our data?
+```{r}
+range(dispatch_unique$new_date)
+```
+
+Other ways to work with true dates:
+```{r}
+#how many dispatch calls per month
+dispatch_unique %>% 
+  count(month(new_date)) %>% 
+  arrange(desc(n))
+```
+
+
+
+
+
+
+

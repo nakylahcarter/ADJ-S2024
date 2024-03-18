@@ -1,0 +1,1201 @@
+Name (last)|Name (first)|Department|Job Title|Total Compensation|Overtime and Oncall Pay|Hourly Rate|Salary Rate
+Carpenter|Danyale|Animal Care & Control|Administrative Assistant|28465.39|101.75|19.38|NA
+Clendening|Jennifer|Animal Care & Control|Administrative Assistant|25120.19|NA|17.24|NA
+Colford|Micayla|Animal Care & Control|Specialist|605.76|NA|13.29|NA
+Cook|Shelley|Animal Care & Control|Animal Care Technician|40206.98|1622.38|20.06|NA
+Dunham|Emily|Animal Care & Control|Intern|12311.88|NA|13.29|NA
+Ennis|Destinee|Animal Care & Control|Animal Care Technician|39978.35|329.44|20.59|NA
+Ennis|Kathryn|Animal Care & Control|Animal Control Officer|45963.59|7348.78|20.51|NA
+Ennis|Mary|Animal Care & Control|Administrative Assistant|34305.42|NA|NA|37176.3
+Eppley|Julia|Animal Care & Control|Shelter Manager|43319.01|NA|NA|49294.45
+Eubank|Nadine|Animal Care & Control|Animal Control Officer|34065.01|7455.51|21.97|NA
+Farmer|Carly|Animal Care & Control|Animal Care Technician|42881.35|366.48|22.21|NA
+Gibson|Jennifer|Animal Care & Control|Volunteer Program Director|42240.7|NA|NA|45721.57
+Herr|Emily|Animal Care & Control|Outreach Coordinator|40978.66|NA|NA|44405.09
+McEvilly|Edyth|Animal Care & Control|Animal Care Technician|39018.85|733.12|20.06|NA
+McKinney|Amber|Animal Care & Control|Animal Care Technician|37040.45|637.52|19.03|NA
+Miller|Darcy|Animal Care & Control|Animal Care Technician|38937.19|663.53|20.06|NA
+Minder|Vicki|Animal Care & Control|Animal Control Officer|51587.11|8530.39|22.349999999999998|NA
+Neal|India|Animal Care & Control|Kennel Worker|9628.64|NA|13.29|NA
+O'Brien|Brenda|Animal Care & Control|Animal Care Technician|42625.99|NA|22.21|NA
+Peffinger|Roberta|Animal Care & Control|Animal Care Technician|41774.86|612.47|21.49|NA
+Pritchard|James|Animal Care & Control|Animal Control Officer|5823.54|590.63|21.25|NA
+Ritchel|Lisa|Animal Care & Control|Administrative Assistant|26837.24|NA|17.24|NA
+Sauder|Virgil|Animal Care & Control|Director|68646.9|NA|NA|74391.82
+Steury|Nickiah|Animal Care & Control|Animal Care Officer|55358.93|14571.15|21.25|NA
+Fuentes-Rohwer|Luis|Board of Public Safety|Board Member|585.6|NA|NA|635
+Gray|Kim|Board of Public Safety|Board Member|585.6|NA|NA|635
+Hasan|Rafi|Board of Public Safety|Board Member|585.6|NA|NA|635
+Reese|Maqube|Board of Public Safety|Board Member|585.6|NA|NA|635
+Yoon|Susan|Board of Public Safety|Board Member|9.76|NA|NA|635
+Calender-Anderson|Beverly|CFRD|Director|92789.87|NA|NA|100555.23
+Culp|Charles|CFRD|After Hours Ambassador|20139.62|NA|NA|52363
+Luce|Josefa|CFRD|Latino Outreach Coordinator|42200.19|NA|NA|45731.83
+Moss|Michelle|CFRD|Intern|6980.58|NA|13.29|NA
+Moss|Shatoyia|CFRD|Director - Safe and Civil City|44357.42|NA|NA|48069.6
+Owens|Sue|CFRD|Program Specialist - Special Projects|56222.48|NA|NA|60927.55
+Parr|Marissa|CFRD|Office Manager|37275.02|NA|NA|40394.57
+Schaich|Lucy|CFRD|CBVN Coordinator|52564.4|NA|NA|56963.28
+Shermis|Michael|CFRD|Special Projects Coordinator|52479.17|NA|NA|56871.09
+Aylward|Sydney|Clerk's Office|Intern|1621.38|NA|13.29|NA
+Bolden|Nicole|Clerk's Office|City Clerk|55401.49|NA|NA|60038
+Fizer|Casey|Clerk's Office|Intern|1768.06|NA|13.29|NA
+Foster|Rylee|Clerk's Office|Intern|3530.76|NA|13.29|NA
+McDowell|Sofia|Clerk's Office|Chief Deputy Clerk|48962.81|NA|NA|53060.4
+Simunek|Kathleen|Clerk's Office|Intern|859.32|NA|13.29|NA
+Stoll|Susan|Clerk's Office|Deputy Clerk|44704.06|NA|NA|48445.21
+Baker|Julie|Controller's Office|Accounts Payable/Revenue Clerk|39756.4|NA|NA|43083.46
+Beasley|Lori|Controller's Office|Customer Relations Representative|39119.15|NA|NA|42392.95
+Colarusso Jr|John|Controller's Office|Data Analyst and Manager|22692.29|NA|NA|59000
+Curran|Kevin|Controller's Office|Director Auditing and Financial Services|20677.92|NA|NA|80121.2
+Dean|Denise|Controller's Office|Sr Accts Payable/Revenue Clerk|48229.4|NA|NA|52265.61
+Gilliland|Cheryl|Controller's Office|Director Auditing and Financial Services|27346.17|NA|NA|79000
+Langley|Renee|Controller's Office|Accounts Payable/Revenue Clerk|46768.09|NA|NA|50681.95
+Martindale|Julie|Controller's Office|Purchasing Manager|59508.76|NA|NA|64326.35
+McGlothlin|Kelly|Controller's Office|Payroll Systems Manager|45525.16|NA|NA|49335.08
+McMillian|Jeff|Controller's Office|Deputy Controller|75534.74|NA|NA|81856.03
+Mitchner|Tami|Controller's Office|Accounting and Procurement Manager|47416.52|NA|NA|61525.97
+Peterson|Scott|Controller's Office|Intern|9202.5|90|15|NA
+Reynolds|Beth|Controller's Office|Customer Relations Representative|39097.48|NA|NA|42369.44
+Silkworth|Amy|Controller's Office|Accounts Payable/Revenue Clerk|43914.4|NA|NA|47589.46
+Underwood|Jeffrey|Controller's Office|Controller|99148.17|NA|NA|107445.66
+Boustani|Rebekka|Council Office|Assistant Administrator/Legal Research|31205.89|NA|NA|34195.2
+Flaherty|Matthew|Council Office|Council Member|17230.93|NA|NA|18672.94
+Lacy|Heather|Council Office|Deputy Admin/Deputy Attorney|62471.67|NA|NA|67699.77
+Lucas|Stephen|Council Office|Council/Administrator Attorney|80475.23|NA|NA|87210
+Piedmont-Smith|Isabel|Council Office|Council Member|17230.93|NA|NA|18672.94
+Rollo|David|Council Office|Council Member|17230.93|NA|NA|18672.94
+Rosenbarger|Kate|Council Office|Council Member|17230.93|NA|NA|18672.94
+Sandberg|Susan|Council Office|Council Member|17230.93|NA|NA|18672.94
+Sgambelluri|Susan|Council Office|Council Member|17957.11|NA|NA|19472.96
+Sims|James|Council Office|Council Member|18150.9|NA|NA|19672.9
+Smith|Ronald|Council Office|Council Member|17230.93|NA|NA|18672.94
+Volan|Stephen|Council Office|Council Member|17230.93|NA|NA|18672.94
+Beyer|Rachel|Economic & Sustainable Development|Local Food System Specialist|43397.87|NA|26.63|NA
+Clemens|Lauren|Economic & Sustainable Development|Assistant Director of Sustainability|49885.22|NA|NA|54060
+Crowley|Alex|Economic & Sustainable Development|Director|92789.91|NA|NA|100555.32
+Jackson|Jeffrey|Economic & Sustainable Development|Special Projects Manager|4423.07|NA|NA|51434.32
+Kupersmith|Jane|Economic & Sustainable Development|Assistant Director of Small Business Development|55062.03|NA|NA|59670
+Patrick|Marnina|Economic & Sustainable Development|Customer Service Rep III|33926.2|NA|NA|40392
+Starowitz|Sean|Economic & Sustainable Development|Assistant Director of Sustainability|46520.54|NA|NA|54060
+Warren|Holly|Economic & Sustainable Development|Assistant Director of Arts|12958.83|NA|NA|56746.05
+Aten|Roy|Engineering|Senior Project Manager|62538.46|NA|NA|67772.24
+Cibor|Andrew|Engineering|City Engineer|96510.3|NA|NA|103446.36
+Dierkes|Patrick|Engineering|Project Engineer|71796.16|NA|NA|77804.58
+Herr|Emily|Engineering|Public Improvement Manager|45203.89|NA|NA|49835.16
+Kehrberg|Paul|Engineering|Engineering Field Specialist|42950.24|NA|NA|46544.58
+Kopper|Neil|Engineering|Senior Project Engineer|76042.97|NA|NA|81899.9
+Matinkhah|SayedHamid|Engineering|Engineering Technician - AutoCad|19954.6|NA|NA|42300
+Smethurst|Matt|Engineering|Project Manager|50879.07|NA|NA|55136.96
+Stewart|Michael|Engineering|Planning Technician|40916.75|NA|NA|44341.01
+White|Russell|Engineering|Project Manager|47444.96|NA|NA|51415.53
+Boruff|James|Facilities Maintenance|Director|65026.6|NA|NA|70468.5
+Flake|Russell|Facilities Maintenance|Maintenance/Custodian|41619.86|565.5|21.4|NA
+Smith|Chris|Facilities Maintenance|Downtown Specialist|34055.84|NA|NA|36899.87
+Truvia|Rickey|Facilities Maintenance|Laborer|1623.75|NA|15|NA
+Wallock|Barry|Facilities Maintenance|Maintenance/Custodian|41684.86|640.5|21.4|NA
+Abram|William|Fire|FF1|54101.05|1488.73|NA|55125
+Anderson|William|Fire|Captain|101584.91|11768.43|NA|66876
+Andrews|Matthew|Fire|FF1|73876.15|4738.67|NA|60475
+Arthur|Randall|Fire|Chauffeur|58657.27|1124.82|NA|60824
+Bare|Greg|Fire|FF1|58349.25|1380.55|NA|58025
+Blackwell|Cory|Fire|Chauffeur|57710.44|1404.76|NA|58684
+Blackwell|Joshua|Fire|FF1|60070.35|1505.26|NA|59225
+Brinegar|Adam|Fire|Chauffeur|67324.79|3809.41|NA|61734
+Brinson|Zachary|Fire|Chauffeur|60278.88|2181.8|NA|60484
+Brown|Austin|Fire|FF1|54333.86|1164.1|NA|55825
+Brown|James|Fire|Probationary Firefighter|34310.44|3529.07|NA|49477
+Brown|Kevin|Fire|FF1|26363.69|790.13|NA|57725
+Butcher|Aaron|Fire|Captain|61996.11|1167.45|NA|63335
+Canada|Jordan|Fire|FF1|71702.98|5697.4|NA|59425
+Carmichael|Steven|Fire|Chauffeur|70816.52|3823.43|NA|63034
+Cazee|Kenneth|Fire|FF1|60666.16|1811.18|NA|60825
+Clapp|Timothy|Fire|Fire Marshall|59553.93|1500|NA|62804
+Combs|Daren|Fire|FF1|58596.99|1140.23|NA|59684
+Coover|Stephen|Fire|Captain|23709.96|321.8|NA|67568.8
+Cornwell|Marty|Fire|Chauffeur|62997.83|2803.08|NA|59484
+Criger|James|Fire|FF1|62765.14|2719.88|NA|58721
+Daffron|Tania|Fire|Battalion Chief|70121.66|NA|NA|75990
+Deck|Logan|Fire|FF1|54577.05|1291.69|NA|55725
+Deckard|Cameron|Fire|Captain|62498.96|1026.8|NA|64532
+Dillard|Clayton|Fire|FF1|479.76|NA|NA|58370.8
+Drescher|Travis|Fire|Battalion Chief|70644.56|NA|NA|75990
+Dyer|Doug|Fire|FF1|57240.44|1489.98|NA|57825
+Elkins|Jayden|Fire|FF1|63044.91|2499.79|NA|58825
+Emerick|Dan|Fire|FF1|57484.86|1326.46|NA|57816
+Epler|Barton|Fire|FF1|71421.57|3795.66|NA|60970
+Figolah|Tom|Fire|Community Engagement Officer|60054.51|2100|NA|62804
+Fleetwood|Billy D|Fire|Chauffeur|57277.12|876.69|NA|59072
+Fritz|Jared|Fire|FF1|57693.65|951.81|NA|59825
+Gillespie|Joseph|Fire|Captain|25726.3|736.3|NA|66021.2
+Goad|Jeremy|Fire|FF1|57884|961.92|NA|58425
+Greathouse|Anthony|Fire|FF1|66280.21|3005.99|NA|60925
+Hacker|Jeffrey|Fire|Captain|64324.11|1225.31|NA|66284
+Hayes|John|Fire|Captain|66062.28|1145.69|NA|68376
+Hinkle|Kenneth|Fire|FF1|59459.69|1498.23|NA|59525
+Hoard|Mark|Fire|FF1|10921.12|NA|NA|59889.2
+Hodges|Jamie|Fire|FF1|60138.79|2873.21|NA|56325
+Hollars|Brian|Fire|FF1|58471.72|584.64|NA|60975
+Hudson|Brandon|Fire|FF1|61994.26|1972.86|NA|61325
+Hutchinson|Bryan|Fire|Chauffeur|59342.89|1675.23|NA|60184
+Huttenlocker|Shaun|Fire|FF1|60996.48|3199.35|NA|55125
+Jenkins|Dallas|Fire|Probationary Firefighter|30875.89|861.3|NA|49435.6
+Johnson|James|Fire|FF1|61316.79|3108.05|NA|58425
+Johnson|Joseph|Fire|Fire Inspection Officer|2396.62|NA|NA|62804.46
+Kerr|Jeffrey|Fire|Captain|20956.08|NA|NA|65378.8
+Kerr II|Roger|Fire|Battalion Chief|70244.56|NA|NA|75990
+King|Kane|Fire|FF1|57029.28|730.22|NA|59130
+Knapp|Rick|Fire|Captain|17930.72|NA|NA|67481.2
+Koons|Kyle|Fire|Captain|61197.35|719.99|NA|64926
+Litwin|Max|Fire|Captain|73073.46|2903.29|NA|67426
+Loviscek Jr|Robert|Fire|Logistics Officer|57954.49|NA|NA|62804.46
+Lucas|Gregory|Fire|FF1|82814.43|8903.37|NA|56725
+Manning|Sean|Fire|Probationary Firefighter|35158.55|1017.92|NA|49464.8
+McCord|Hayden|Fire|Probationary Firefighter|27632.09|NA|NA|49483.2
+McKnight|Scott|Fire|Captain|117203.39|16644.01|NA|66372
+McWhorter|Robert|Fire|FF1|63782.76|2470.15|NA|60384
+Milne|Christopher|Fire|FF1|61429.89|3695.25|NA|56025
+Mitchell|Scott|Fire|Chauffeur|59307.66|1460.9|NA|60940
+Mitchell|Stacey|Fire|FF1|73638.12|3890.14|NA|60925
+Moore|Jason|Fire|Chief|99445.54|NA|NA|103446.39
+Morgan Jr|Robert|Fire|Probationary Firefighter|35857.84|773.29|NA|49464.8
+Morran|Gabriel|Fire|FF1|63656.11|3256.53|NA|57925
+Muehling|Matt|Fire|FF1|74038.89|6359.97|NA|59925
+Mundy|Kyle|Fire|FF1|59553.79|1550.94|NA|60386
+Murphy|Luke|Fire|Chauffeur|62011.96|2162.4|NA|61784
+Neibel Jr|Ronald|Fire|Captain|73779.36|4268.96|NA|65726
+O'Brien|James|Fire|Chauffeur|60980.48|1977.76|NA|60940
+O'Neal|Daniel|Fire|Probationary Firefighter|31421.2|1447.52|NA|49446.54
+O'Neal|Sean|Fire|FF1|54212.52|1556.33|NA|55325
+Owens|Devin|Fire|Probationary Firefighter|44997.21|3738.3|NA|49464.8
+Parke|Phillip|Fire|Probationary Firefighter|36780.16|1176.65|NA|49464.8
+Patterson|Matthew|Fire|FF1|58214.73|1596.97|NA|58325
+Perry|Ethan|Fire|Probationary Firefighter|38500.52|1769.58|NA|49483.2
+Peterson|John|Fire|FF1|12125.75|274.51|NA|57319.6
+Pfeiffer II|Stanley|Fire|Chauffeur|75863.24|6123.52|NA|60684
+Piercy|Daniel|Fire|FF1|56294.65|286.09|NA|59625
+Piercy|Joseph|Fire|FF1|59547.84|1548.12|NA|59480
+Pittman|Skyler|Fire|Captain|63609.53|1506.13|NA|64620
+Quimby|Craig|Fire|Chauffeur|57699.94|954.66|NA|59384
+Radanovich|Joseph|Fire|FF1|59274.91|1764.19|NA|59225
+Reeves|Jordan|Fire|FF1|61212.52|2679.88|NA|58425
+Richards|Joe|Fire|FF1|56991.42|1212.7|NA|58825
+Roberts|Brett|Fire|Captain|73592.19|3357.91|NA|65626
+Rogers|Nolan|Fire|FF1|56870.77|1732.73|NA|56625
+Rorem|Brett|Fire|Probationary Firefighter|59409.84|2810.12|NA|49464.8
+Rosebrock|Jacelen|Fire|FF1|60146.24|2237.19|NA|57425
+Saucier|Jordan|Fire|Probationary Firefighter|35912.94|1261.29|NA|49464.8
+Scott|Johnnie|Fire|FF1|56760.44|878.92|NA|59685
+Scrogham|Scott|Fire|FF1|61498.3|3077.57|NA|56619
+Snyder|Berniece|Fire|Administrative Assistant|38362.73|NA|NA|41573.13
+Staggs|Seth|Fire|FF1|55629.13|2358.07|NA|56325
+Stanton|Brent|Fire|FF1|59127.68|1403.52|NA|60269
+Steward|Kyle|Fire|FF1|61984.33|1667.41|NA|59525
+Sturgeon|Gerald|Fire|Captain|64850.3|2066.68|NA|65788
+Tapp|Josh|Fire|Probationary Firefighter|43768.15|3616.69|NA|49464.8
+Teague|James|Fire|Captain|62588.27|1642.11|NA|64726
+Teeters|Nick|Fire|Captain|73488.36|3903.93|NA|66664
+Thompson|Brent|Fire|Captain|78815.23|12029.77|NA|68286
+Timbrook|Coy|Fire|FF1|62715.91|2340.29|NA|61975
+Tracey|Jeremiah|Fire|FF1|53957.51|1206.49|NA|56525
+Tracy|Kevin|Fire|Captain|75073.33|4874.1|NA|67773
+Vaughan|Neville|Fire|Battalion Chief|70244.56|NA|NA|75990
+Vollrath|Victor|Fire|FF1|89429.35|10439.7|NA|58325
+Waggoner|Kody|Fire|FF1|63944.72|3495.8|NA|56825
+Waldridge|Steven|Fire|FF1|10494.57|136.01|NA|56823.2
+Walton|Deon|Fire|Probationary Firefighter|30021.52|2602.82|NA|49464.8
+Washel|Jayme|Fire|Deputy Chief|75869.1|NA|NA|82110
+Waterford|Jason|Fire|Chauffeur|73310.21|5573.74|NA|60184
+Weaver|Stephen|Fire|Captain|93558.84|11254.15|NA|65826
+Webb|Justin|Fire|FF1|58039.6|1826.32|NA|56736
+Welch|William|Fire|FF1|4039.84|NA|NA|60064.4
+White|Dustin|Fire|Chauffeur|85498.64|9220.68|NA|60025
+Young|Dane|Fire|Chauffeur|61200.16|1595.44|NA|62034
+Young|Jonathan|Fire|FF1|13124|949|NA|55421.6
+Zeeks|Jason|Fire|Captain|67771.76|1225.92|NA|66313
+Arthur|Kenneth|Fleet|Apprentice Master Technician|41200.76|2521.59|20.75|NA
+Bowlen|Lisa|Fleet|Inventory Coordinator|19760.02|NA|NA|42410.07
+Hillenburg|Ryan|Fleet|Master Technician|48129.08|3344.66|23.92|NA
+Lazell|Lisa|Fleet|Administrative Assistant|42235.83|NA|NA|45770.44
+Robinson|Frank|Fleet|Shop Foreperson|50843.84|4267.31|24.38|NA
+Rushton|Bradley|Fleet|Master Technician|52828.69|3526.47|25.790000000000003|NA
+Sciscoe|Michael|Fleet|Apprentice Master Technician|43799.4|2944.58|21.61|NA
+Sharp|Keith|Fleet|Master Technician|52747.55|2044.06|26.520000000000003|NA
+Smith|James|Fleet|Master Technician|51460.57|3733.19|25.05|NA
+Snider|Cory|Fleet|Inventory Coordinator|13236.79|NA|NA|38375
+Speer|Jason|Fleet|Manager|63925.76|NA|NA|69275.66
+Arnold|Mike|HAND|Neighborhood Compliance Officer|48234.06|NA|NA|52270.63
+Bixler|Daniel|HAND|Rental Specialist I|36199.98|NA|NA|39148.15
+Chipman|Chastina|HAND|Neighborhood Compliance Officer|40233.86|NA|NA|43600.92
+Colom Brana|Gloria|HAND|Program Manager|20139.64|NA|NA|52363
+Council|David|HAND|Neighborhood Compliance Officer|12307.7|NA|NA|40000
+Finley|Christina|HAND|Financial Specialist|47503.1|NA|NA|51478.62
+Herterich|Conor|HAND|Program Manager|21689.71|NA|NA|50725.74
+Hewett|John|HAND|Program Manager|48963.28|NA|NA|53060.93
+Liford|Kenneth|HAND|Neighborhood Compliance Officer|40162.33|NA|NA|43523.32
+McCormick|Maria|HAND|Neighborhood Compliance Officer|40488.46|NA|NA|43876.76
+Mosier|Norman|HAND|Neighborhood Compliance Officer|23288.12|NA|NA|45038.91
+Pierce|Brent|HAND|Assistant Director|71542.84|NA|NA|76817.95
+Radewan|Tonda|HAND|Program Manager Specialist|16443.86|NA|25|NA
+Sims|Doris|HAND|Director|22887.61|NA|NA|103446.24
+Stong|Mary Jo|HAND|Neighborhood Compliance Officer|42777.85|NA|NA|46357.81
+Swinney|Matthew|HAND|Program Manager|46808.4|NA|NA|50725.62
+Toothman|Cody|HAND|Program Manager|46808.38|NA|NA|50725.62
+Van Rooy|Angela|HAND|Program Manager - Neighborhoods|44642.56|NA|NA|48378.6
+Wills|Dee|HAND|Rental Specialist 2|36049.1|NA|NA|39066
+Wright|Edward|HAND|Rental Specialist 2|36025.88|NA|NA|39040.74
+Zody|John|HAND|Director|65747.67|NA|NA|100555.28
+Adams|Lauren|Human Resources|Administrative Assistant|38188.34|NA|NA|41384.26
+Fields|Emily|Human Resources|Assistant Director|57865.43|NA|NA|79691.58
+Hendrix|Brenda|Human Resources|Benefits Manager/HR Generalist|56005.46|NA|NA|60692.46
+Laughter|Joy|Human Resources|Specialist|8001.72|NA|18|NA
+Mevis|Chandra|Human Resources|Administrative Assistant|20295.04|NA|19.5|NA
+Miller|Steven|Human Resources|Human Resources Generalist|21459.07|NA|NA|52020
+Moore|Cathy|Human Resources|Specialist|8196.12|NA|18|NA
+Scales|Kathryn|Human Resources|HR Generalist|16111.71|NA|NA|52363
+Shaw|Caroline|Human Resources|Director|95483.65|NA|NA|103446.39
+Butcher|Adam|ITS|Application Analyst|48962.82|NA|NA|53060.4
+Creek|Richard|ITS|GIS Specialist|45929.01|NA|NA|49772.74
+Cronk|Robert|ITS|Network and Security Administrator|48944.04|NA|NA|53040
+Crump|Michael|ITS|Assistant Director of Operations|76710.36|NA|NA|83130
+Davis|Ashley|ITS|Technology Support Specialist|39062.05|NA|NA|43525.61
+Dehart|Cassandra|ITS|Technology Support Specialist|42568.32|NA|NA|46130.66
+Dietz|Richard|ITS|Director|92789.9|NA|NA|100555.23
+England|Christopher|ITS|Assistant Director for Enterprise Apps|44832.24|NA|NA|81916.13
+Freeman|Mark|ITS|Technology Support Manager|66994.89|NA|NA|81916.13
+Gilliland|Linda|ITS|Technology Support Specialist|54443.2|NA|NA|58999.37
+Goodwin|Justin|ITS|Technology Support Specialist|48277.18|NA|NA|52236.1
+Green|Stefanie|ITS|Accounts and Training Specialist|42089.6|NA|NA|43530.12
+Haley|Laura|ITS|GIS Manager|75140.39|NA|NA|81428.72
+Ingham|Nathan|ITS|Application Infrastructure Analyst|66968.62|NA|NA|72573.04
+Kelson|Hans|ITS|Technology Support Specialist|1478.92|NA|13.29|NA
+King|Desiree|ITS|Office Manager|40214.42|NA|NA|43600.69
+Murphy|Kelly|ITS|Technology Support Manager|3076.92|NA|NA|80000
+Myers|Nicholas|ITS|Technology Support Specialist|39531.64|NA|NA|42840
+Overtoom|Greg|ITS|Assistant Director for Enterprise Apps|12307.68|NA|NA|80000
+Rush|Trent|ITS|Intern|4136.52|NA|13.29|NA
+Schertz|Alan|ITS|Application Analyst|69369.8|NA|NA|75169.22
+Sibo|Walid|ITS|Application Analyst|63908.54|NA|NA|69256.91
+Stier|Max|ITS|GIS Specialist|48203.36|NA|NA|52237.4
+Tierney|Seth|ITS|Systems Administrator|59931.85|NA|NA|64945.93
+Allen|Larry|Legal|Assistant City Attorney|71405.45|NA|NA|77381.1
+DeCriscio Bowe|Nicole|Legal|Human Rights Administrative Assistant|37649.19|NA|NA|40800
+Dixon|Daniel|Legal|Assistant City Attorney|68709.84|NA|NA|74460
+Guthrie|Philippa|Legal|Corporation Counsel|101014.4|NA|NA|107445.87
+Lloyd|Jennifer|Legal|Assistant City Attorney|61208.66|NA|NA|65609.49
+McKinney|Barbara|Legal|Hum. Rights Director/Attorney|78592.66|NA|NA|85169.86
+Moore|Jacquelyn|Legal|Assistant City Attorney|75492.97|NA|NA|81810.74
+Rouker|Michael|Legal|Interim Corporation Counsel|85344.97|NA|NA|100358
+Wheeler|Christopher|Legal|Assistant City Attorney|73538.35|NA|NA|79692.55
+Whitlow|Heather|Legal|Legal Secretary/Paralegal|48200.29|NA|NA|52234.07
+Connor|Gary|Legal/Risk Management|Risk Manager|69918.89|NA|NA|75770.25
+Mosier|Cecily|Legal/Risk Management|Secretary - Risk and Legal|37922.2|NA|NA|41095.8
+Wilson|Brian|Legal/Risk Management|Director of Safety and Training|52711.28|NA|NA|57122.56
+Carmichael|Mary Catherine|Office of the Mayor|Director of Community Engagement|75662.26|NA|NA|81967.14
+Georgas|Matthew|Office of the Mayor|Intern|4356.66|NA|14|NA
+Goodman|Kaisa|Office of the Mayor|Executive Assistant|47462.49|NA|NA|51434.32
+Griffin|Don|Office of the Mayor|Deputy Mayor|71780.75|NA|NA|112073.42
+Hamilton|John|Office of the Mayor|Mayor|112386.94|NA|NA|121847
+Karon|Elizabeth|Office of the Mayor|Executive Assistant|57565.31|NA|NA|50181.55
+Kidd|Devta|Office of the Mayor|Director of Innovation|71326.97|NA|NA|77286.11
+Kipp|Jordan|Office of the Mayor|Intern|9802.33|NA|13.29|NA
+Krebbs|Andrew|Office of the Mayor|Digital Brand Manager|50461.65|NA|NA|60000
+Ksander|Yael|Office of the Mayor|Communications Director|64630.94|NA|NA|70039.73
+Miller|Sarah|Office of the Mayor|Intern|1527.29|NA|13.29|NA
+Renneisen|Thomas|Office of the Mayor|Deputy Mayor|54793.23|NA|NA|112073.42
+Smith|Rose|Office of the Mayor|Administrative Coordinator|4500.01|NA|NA|39000
+Wolfinger|Celeste|Office of the Mayor|Administrative Coordinator|30400.39|NA|NA|39247.69
+Alexander|Brian|Parking Services Division|Team Leader|46856.6|NA|NA|50690.48
+Allison|Keith|Parking Services Division|School Crossing Guard|3530.5|NA|23|NA
+Barnett|Terry|Parking Services Division|School Crossing Guard|2587.5|NA|23|NA
+Branam|Patricia|Parking Services Division|School Crossing Guard|2783|NA|23|NA
+Cox|Raye Ann|Parking Services Division|Parking Enforcement Supervisor|56952.12|NA|NA|61718.24
+Daily|Ryan|Parking Services Division|Parking Garage Manager|61479.06|NA|NA|66624
+Deckard|Douglas|Parking Services Division|Parking Enforcement Officer|22842.3|NA|NA|36806.05
+Dyer|Amber|Parking Services Division|School Crossing Guard|1368.5|NA|23|NA
+Dyer|Patricia|Parking Services Division|School Crossing Guard|3645.5|NA|23|NA
+Fettchenhauer|Jamie|Parking Services Division|School Crossing Guard|759|NA|23|NA
+Galoozis|Theofilos|Parking Services Division|School Crossing Guard|1161.5|NA|23|NA
+Gates|Matthew|Parking Services Division|Customer Ser/Security Specialist|26028.05|NA|NA|38290.62
+Goodman|Jessica|Parking Services Division|Customer Ser/Security Specialist|35181.48|NA|NA|38290.62
+Gramlich|Anthony|Parking Services Division|Customer Ser/Security Specialist|30293.75|NA|NA|36500
+Hartman|John|Parking Services Division|Parking Enforcement Officer|5945.77|NA|NA|40765.71
+Heath|Justin|Parking Services Division|Parking Enforcement Officer|27466.54|NA|NA|35706.53
+Hedrick|Brandon|Parking Services Division|Parking Enforcement Officer|32953.18|NA|NA|35706.53
+Howard|Sean|Parking Services Division|Customer Ser/Security Specialist|2737.5|NA|NA|36500
+Jackson|Ross|Parking Services Division|Parking Enforcement Officer|38461.14|NA|NA|41679.83
+Jasicki|Marta|Parking Services Division|School Crossing Guard|103.5|NA|23|NA
+Knipp|Steven|Parking Services Division|Parking Enforcement Officer|8687.75|NA|NA|38285
+Lawson|Charlene|Parking Services Division|Parking Enforcement Officer|16197.52|NA|NA|38285
+McCarter|Susan|Parking Services Division|Parking Enforcement Officer|34584.88|NA|NA|38307.41
+McCracken|Carol|Parking Services Division|School Crossing Guard|1575.5|NA|23|NA
+McLaughlin|Susannah|Parking Services Division|School Crossing Guard|1506.5|NA|23|NA
+McPike|Michael|Parking Services Division|Customer Ser/Security Specialist|35330.84|NA|NA|38290.72
+Miles|Jim|Parking Services Division|Parking Enforcement Officer|39131.31|NA|NA|42406.14
+Mitchner|Linda|Parking Services Division|School Crossing Guard|2024|NA|23|NA
+Mitchner|Randell|Parking Services Division|School Crossing Guard|2024|NA|23|NA
+Oard|Shannon|Parking Services Division|School Crossing Guard|1403|NA|23|NA
+Russell|Finley|Parking Services Division|School Crossing Guard|3174|NA|23|NA
+Rutherford|Gary|Parking Services Division|Parking Enforcement Officer|39106.19|NA|NA|42378.77
+Schertz|Ann|Parking Services Division|School Crossing Guard|1506.5|NA|23|NA
+Sloman|Pascal|Parking Services Division|School Crossing Guard|841.8|NA|23|NA
+Sowders|Zachary|Parking Services Division|Customer Ser/Security Specialist|35334.37|NA|NA|38290.62
+Swyers|Donna|Parking Services Division|School Crossing Guard|3634|NA|23|NA
+Turpin|Raymond|Parking Services Division|School Crossing Guard|943|NA|23|NA
+Umphress|Dalton|Parking Services Division|Customer Ser/Security Specialist|35367.82|85|NA|38290.72
+Wahl|Michelle|Parking Services Division|Parking Services Director|68555.03|NA|NA|74358
+White|Leisel|Parking Services Division|School Crossing Guard|46|NA|23|NA
+Wisley|John|Parking Services Division|Parking Enforcement Officer|35325.75|NA|NA|38285.21
+Zieburtz|William|Parking Services Division|Customer Ser/Security Specialist|21323.69|NA|NA|35089.6
+Abram|Shane|Parks and Rec|Supervisor|104.55|NA|13.49|NA
+Ahmann|Heather|Parks and Rec|Supervisor|2758.71|NA|13.49|NA
+Alexander|John|Parks and Rec|Leader|1071.2|NA|13.39|NA
+Alexander|Kathryn|Parks and Rec|Attendant|202.68|NA|13.29|NA
+Amick|Sophie|Parks and Rec|Lifeguard|2438.39|NA|13.64|NA
+Anderson|Lucas|Parks and Rec|Leader|4761.35|NA|13.39|NA
+Arnold|Matthew|Parks and Rec|Lifeguard|3253.58|NA|13.54|NA
+Arriaga|Anjel|Parks and Rec|Leader|13142.81|NA|13.49|NA
+Arthur|Gabriel|Parks and Rec|Lifeguard|2016|NA|13.44|NA
+Atkinson|Benjamin|Parks and Rec|Leader|53.56|NA|13.39|NA
+Awan|Taha|Parks and Rec|Supervisor|1305.16|NA|13.49|NA
+Baba|Lauren|Parks and Rec|Specialist|200|NA|16|NA
+Bacon|Sarah|Parks and Rec|Laborer|725.09|NA|13.49|NA
+Baer|Joseph|Parks and Rec|Attendant|5249.56|NA|13.29|NA
+Bains|Sandeep|Parks and Rec|Leader|2651.06|NA|13.39|NA
+Baker|William|Parks and Rec|Staff Assistant|1503|NA|15.03|NA
+Bakhayokho|N'deye|Parks and Rec|Leader|2647.88|NA|13.39|NA
+Balcam|Quinn|Parks and Rec|Lifeguard|3538.08|NA|13.44|NA
+Balsam|Elizabeth|Parks and Rec|Supervisor|4087.48|NA|13.49|NA
+Barber|Jennifer|Parks and Rec|Staff Assistant|14003.77|NA|15.13|NA
+Barich|Donald|Parks and Rec|Laborer|9213.68|NA|13.49|NA
+Barnes|John|Parks and Rec|Master Motor Equipment Operator|42937.34|488.62|22.21|NA
+Barrett|Maxwell|Parks and Rec|Intern|10045.08|NA|10|NA
+Barrow|Mackenzie|Parks and Rec|Attendant|3662.94|NA|13.29|NA
+Baryoh|Moses|Parks and Rec|Leader|1255.31|NA|13.39|NA
+Bauer|Kayla|Parks and Rec|Attendant|591.41|NA|13.29|NA
+Becker|Marie|Parks and Rec|Working Foreperson - Urban Green Space|38949.12|NA|20.32|NA
+Behrman|Joachim|Parks and Rec|Natural Resources Working Foreperson|41259.7|397.77|21.38|NA
+BeMiller|Zachary|Parks and Rec|Laborer|304.6|NA|13.69|NA
+Bennett|Ryan|Parks and Rec|Supervisor|2621.57|NA|13.49|NA
+Bergin|Joseph|Parks and Rec|Leader|4753.47|NA|13.39|NA
+Berzins|Dzintara|Parks and Rec|Specialist|460|NA|16|NA
+Bierman|Joseph|Parks and Rec|Attendant|5510.97|NA|13.29|NA
+Blubaugh|Delaney|Parks and Rec|Lifeguard|2469.33|NA|13.54|NA
+Bond|Theresa|Parks and Rec|Staff Assistant|20807.99|34.27|15.23|NA
+Boone|Clarence|Parks and Rec|Program/Facility Coordinator|30665.36|NA|NA|46900
+Bowlen|Timothy|Parks and Rec|Attendant|1707.78|NA|13.29|NA
+Boyd|Bram|Parks and Rec|Supervisor|15814.49|NA|13.49|NA
+Bradley|Kiah|Parks and Rec|Laborer|1966.17|NA|13.49|NA
+Brinson|Leslie|Parks and Rec|Community Events Manager|51939.8|NA|NA|56286.48
+Brown|Elliott|Parks and Rec|Lifeguard|5188.25|NA|13.64|NA
+Brown|Roger|Parks and Rec|Staff Assistant|18713.88|NA|15.23|NA
+Brown-Sparks|Izabella|Parks and Rec|Supervisor|1261.31|NA|13.49|NA
+Brummett|Morgan|Parks and Rec|Staff Assistant|7091.79|NA|15.03|NA
+Brush|Lucy|Parks and Rec|Lifeguard|3447.22|NA|13.54|NA
+Burney|Jaylynn|Parks and Rec|Program Specialist|15432.81|NA|NA|36500
+Calvert|Madison|Parks and Rec|Supervisor|4718.16|NA|13.49|NA
+Campanella|Evan|Parks and Rec|Specialist|1340.24|NA|16|NA
+Campanella|Jennifer|Parks and Rec|Specialist|620.5|NA|17|NA
+Campbell|Ellen|Parks and Rec|Community Relations Specialist|41702.68|NA|NA|45111.31
+Carballo|Elias|Parks and Rec|Lifeguard|2465.43|NA|13.64|NA
+Carver|Mackenzie|Parks and Rec|Attendant|960.2|NA|13.29|NA
+Chamerlain|Danielle|Parks and Rec|Specialist|420|NA|16|NA
+Chambers|Brandon|Parks and Rec|Specialist|1840|NA|20|NA
+Chambers|Dylan|Parks and Rec|Attendant|1824.08|NA|13.29|NA
+Christie|Chaun|Parks and Rec|Attendant|6664.95|NA|13.29|NA
+Chung|Andrew|Parks and Rec|Supervisor|5378.76|82.14|13.49|NA
+Clapp|Kimberly|Parks and Rec|Office Manager|45747.14|NA|NA|49575.5
+Clark|Aaron|Parks and Rec|Leader|1446.12|NA|13.39|NA
+Clementi|Kaitlyn|Parks and Rec|Attendant|6678.72|NA|13.29|NA
+Clements|Olivia|Parks and Rec|Leader|9773.68|NA|13.49|NA
+Coar|Tyler|Parks and Rec|Laborer|10029.65|46.2|13.69|NA
+Connallon|Erin|Parks and Rec|Lifeguard|2684.64|NA|13.44|NA
+Conrad|Caroline|Parks and Rec|Attendant|1010.04|NA|13.29|NA
+Cooper|Dakota|Parks and Rec|Laborer|8112.58|35.41|13.49|NA
+Cordon|Ella|Parks and Rec|Leader|883.74|NA|13.39|NA
+Cotter|Steve|Parks and Rec|Natural Resources Manager|52901.19|NA|NA|57328.39
+Cowden|Jackson|Parks and Rec|Staff Assistant|20123.33|603.08|15.03|NA
+Craig|Aaron|Parks and Rec|Golf Facilities Manager|53772.53|NA|NA|58272.52
+Craiutu|Sophia|Parks and Rec|Specialist|148|NA|16|NA
+Crawford|Brittany|Parks and Rec|Supervisor|2286.25|NA|13.69|NA
+Crider|Emma|Parks and Rec|Lifeguard|3499.2|NA|13.54|NA
+Crim|Randi|Parks and Rec|Supervisor|2354.69|NA|13.69|NA
+Crowe|Madalyn|Parks and Rec|Attendant|2189.56|NA|13.29|NA
+Cutshall|Trevor|Parks and Rec|Supervisor|783.77|NA|13.69|NA
+D'Agostino|Amanda|Parks and Rec|Leader|3483.13|NA|13.39|NA
+Daniels|Robert|Parks and Rec|Supervisor|26.98|NA|13.49|NA
+Davis|Chris|Parks and Rec|Laborer|1821.15|NA|13.49|NA
+Davis|Joseph|Parks and Rec|Attendant|1275.84|NA|13.29|NA
+Davis|Tiana|Parks and Rec|Attendant|43.19|NA|13.29|NA
+DeBruyn|Catherine|Parks and Rec|Leader|2760.38|NA|13.39|NA
+Deckard|Aleena|Parks and Rec|Attendant|1571.55|NA|13.29|NA
+Deckard|Madison|Parks and Rec|Attendant|2405.5|NA|13.29|NA
+DeGroote|James|Parks and Rec|Laborer|15634.93|NA|13.49|NA
+DelFierro|Isaiah|Parks and Rec|Leader|1797.63|NA|13.39|NA
+Deliyannis|Harilaos|Parks and Rec|Laborer|2677.77|NA|13.49|NA
+Deppert|Quinton|Parks and Rec|Attendant|4688.07|NA|13.29|NA
+Donovan|Dillon|Parks and Rec|Laborer|11454.73|237.77|13.49|NA
+Donovan|Timothy|Parks and Rec|Specialist|15338.83|NA|16.65|NA
+Dukes|Thomas|Parks and Rec|Attendant|6411.64|NA|13.29|NA
+Dunbar|Barbara|Parks and Rec|Operations Office Coordinator|46822.54|NA|NA|50740.95
+Eads|Daren|Parks and Rec|Program/Facility Coordinator|50558.45|NA|NA|54789.57
+Eads|Jackson|Parks and Rec|Attendant|4276.07|NA|13.29|NA
+Eakin|Alexandra|Parks and Rec|Lifeguard|1021.44|NA|13.44|NA
+Edwards|Allen|Parks and Rec|Specialist|21578.38|165.04|16.3|NA
+Ehrstein|Adam|Parks and Rec|Laborer|16448.59|NA|13.69|NA
+Elem|Christina|Parks and Rec|Leader|4194.49|NA|13.39|NA
+Emerson|Julia|Parks and Rec|Supervisor|3379.26|NA|13.49|NA
+Engelking|Eric|Parks and Rec|Laborer|3908.73|NA|13.49|NA
+Erickson|Dakota|Parks and Rec|Supervisor|574.99|NA|13.69|NA
+Farjoodi|Ali|Parks and Rec|Leader|508.83|NA|13.39|NA
+Farkas|Lily|Parks and Rec|Lifeguard|4076.82|NA|13.64|NA
+Flake|Benjamin|Parks and Rec|Laborer|1067.82|NA|13.69|NA
+Flannigan|Antonio|Parks and Rec|Leader|100.43|NA|13.39|NA
+Fleener|Donald|Parks and Rec|Laborer|17985.26|NA|13.69|NA
+Fletcher|Austin|Parks and Rec|Leader|696.29|NA|13.39|NA
+Foddrill|Don|Parks and Rec|Working Foreperson|43144.32|NA|22.48|NA
+Foote|Justin|Parks and Rec|Leader|7713.07|NA|13.49|NA
+Forrester|Katarina|Parks and Rec|Specialist|376|NA|16|NA
+Fox|David|Parks and Rec|Working Foreperson|34858.87|299.16|21.18|NA
+Frazier|Samantha|Parks and Rec|Lifeguard|870.24|NA|13.44|NA
+Garcia|Abigail|Parks and Rec|Laborer|3594.56|NA|13.59|NA
+Gardner|Emily|Parks and Rec|Intern|751.5|NA|15.03|NA
+Geyman|Mallory|Parks and Rec|Attendant|428.62|NA|13.29|NA
+Giles|Lauren|Parks and Rec|Leader|5710.85|NA|13.39|NA
+Gilstrap|Curtis L.|Parks and Rec|Working Foreperson|45927.02|1567.41|23.21|NA
+Gocken|Michael|Parks and Rec|Staff Assistant|17320.33|NA|15.23|NA
+Grabowski|Melissa|Parks and Rec|Customer Relations Representative|25553.76|NA|17.76|NA
+Graef|Eleanor|Parks and Rec|Lifeguard|3323.04|NA|13.44|NA
+Graham|Cynthia|Parks and Rec|Supervisor|2509.14|NA|13.49|NA
+Granlund|Sydney|Parks and Rec|Intern|1503|NA|15.03|NA
+Gray|Evan|Parks and Rec|Lifeguard|3679|NA|13.44|NA
+Gray|Jenna|Parks and Rec|Attendant|3226.16|NA|13.29|NA
+Gray|Zoe|Parks and Rec|Specialist|300|NA|16|NA
+Green|William|Parks and Rec|Laborer|3362.38|NA|13.49|NA
+Grimes|Madison|Parks and Rec|Leader|2091|NA|13.39|NA
+Grubb|Robert|Parks and Rec|Laborer|33039.87|567.7|19.57|NA
+Haines-Fields|Isabelle|Parks and Rec|Attendant|2186.22|NA|13.29|NA
+Hall|Tiffany|Parks and Rec|Customer Relations Representative|39083.71|NA|NA|42354.6
+Hamric|Chris|Parks and Rec|Laborer|1088.36|NA|13.69|NA
+Hankins|Ann|Parks and Rec|Lifeguard|3198.71|NA|13.54|NA
+Hanlon|William|Parks and Rec|Lifeguard|2687.7|NA|13.54|NA
+Hannon|Sarah|Parks and Rec|Leader|4865.19|NA|13.49|NA
+Hanson|Russell|Parks and Rec|Laborer|2419.71|NA|13.69|NA
+Harrington|Douglas|Parks and Rec|Supervisor|5250.01|NA|13.49|NA
+Hasey|Johnathan|Parks and Rec|Leader|5523.27|NA|13.49|NA
+Hasler|Wyatt|Parks and Rec|Leader|1598.87|NA|13.39|NA
+Hatch|Erin|Parks and Rec|Urban Forester|45831.2|NA|NA|49705.46
+Hawkins|Cory|Parks and Rec|Program Specialist|29688.09|NA|NA|38203.49
+Headdy|Oliver|Parks and Rec|Lifeguard|2832.48|NA|13.44|NA
+Heiger|Catherine|Parks and Rec|Specialist|180|NA|16|NA
+Henry|Doak M|Parks and Rec|Staff Assistant|21823.58|755.26|15.03|NA
+Herendeen|Lexona|Parks and Rec|Staff Assistant|17850.89|NA|15.03|NA
+Hershberger|James|Parks and Rec|Supervisor|5139.57|NA|13.49|NA
+Higgins|Ernest|Parks and Rec|Laborer|13067.15|25.48|13.59|NA
+Higgins|Rebecca|Parks and Rec|Recreation Services Director|68625.47|NA|NA|74368.56
+Hill|Elm|Parks and Rec|Leader|2892.24|NA|13.39|NA
+Hill|Renee|Parks and Rec|Specialist|9394|NA|16|NA
+Himebaugh|Austin|Parks and Rec|Laborer|1427.19|NA|13.69|NA
+Hodge|Alexandra|Parks and Rec|Specialist|11362.09|146.7|16.3|NA
+Hoke|Greggory|Parks and Rec|Attendant|4581.74|NA|13.29|NA
+Holbert|Alayna|Parks and Rec|Leader|3089.76|NA|13.39|NA
+Hollingsworth|Michael|Parks and Rec|Equipment Maintenance Mechanic|43391.87|1216.13|22.05|NA
+Holmes|Sharod|Parks and Rec|Leader|4119.54|NA|13.39|NA
+Hooks|Ta'Riah|Parks and Rec|Leader|1084.59|NA|13.39|NA
+Horman|Jakob|Parks and Rec|Lifeguard|2147.04|NA|13.44|NA
+Howard|Curtis|Parks and Rec|Supervisor|3692.9|NA|13.49|NA
+Hudson|Kyle|Parks and Rec|Specialist|24213.26|337.16|16.65|NA
+Hudson|Tyler|Parks and Rec|Laborer|1588.46|NA|13.49|NA
+Hylton|Michaela|Parks and Rec|Attendant|531.62|NA|13.29|NA
+Inman|Karen|Parks and Rec|Laborer|5461.77|96.12|13.49|NA
+Jachim|Mary|Parks and Rec|Specialist|2820.83|NA|16|NA
+Johnson|Luke|Parks and Rec|Attendant|1202.76|NA|13.29|NA
+Johnson|Tiffany|Parks and Rec|Leader|800.05|NA|13.39|NA
+Jones|Doug|Parks and Rec|Laborer|19309.74|NA|13.69|NA
+Keithley|Maxwell|Parks and Rec|Attendant|445.22|NA|13.29|NA
+Ketcham|Andrew|Parks and Rec|Laborer|13921.69|NA|13.49|NA
+Kido|Masaru|Parks and Rec|Staff Assistant|14177.08|NA|15.03|NA
+Klein|Jessica|Parks and Rec|Health and Wellness Coordinator|42223.13|NA|NA|45756.64
+Kluesner|Daniel|Parks and Rec|Laborer|41003.74|NA|21.38|NA
+Knapp|William|Parks and Rec|Staff Assistant|6453.73|NA|15.23|NA
+Knipstein|Mitchell|Parks and Rec|Supervisor|3753.61|NA|13.49|NA
+Knudsen|William|Parks and Rec|Supervisor|3254.8|NA|13.69|NA
+Kojder|Alyssa|Parks and Rec|Supervisor|4212.27|NA|13.49|NA
+Kolb|Claire|Parks and Rec|Staff Assistant|7182.56|NA|15.03|NA
+Korvela|Kenneth|Parks and Rec|Laborer|2499.02|NA|13.49|NA
+Kramer|Maggi|Parks and Rec|Supervisor|197.06|NA|13.59|NA
+La Bella|Gianina|Parks and Rec|Attendant|622.99|NA|13.29|NA
+Lake|Billie|Parks and Rec|Leader|12565.69|NA|13.59|NA
+Lake|Robert|Parks and Rec|Leader|11920.24|NA|13.59|NA
+Lamb|Chris|Parks and Rec|Working Foreperson|44462.6|1064.55|22.65|NA
+Land|Ava|Parks and Rec|Lifeguard|3992.91|NA|13.64|NA
+Langley|Levi|Parks and Rec|Attendant|425.29|NA|13.29|NA
+Lauer|Owen|Parks and Rec|Supervisor|1640.69|NA|13.49|NA
+Lavender|Jai|Parks and Rec|Laborer|11760.16|NA|13.69|NA
+Lee|Petre|Parks and Rec|Attendant|1578.19|NA|13.29|NA
+Lee|William|Parks and Rec|Supervisor|10831.23|NA|13.59|NA
+Leeper|Sydney|Parks and Rec|Leader|4950.97|NA|13.39|NA
+Lewis|Kathryn|Parks and Rec|Attendant|1814.1|NA|13.29|NA
+Lilley|Allison|Parks and Rec|Lifeguard|2284.8|NA|13.44|NA
+Lillis|Erin|Parks and Rec|Attendant|4905.53|NA|13.29|NA
+Livingston|Dennis|Parks and Rec|Specialist|21669.98|NA|16.65|NA
+Locke|Larry|Parks and Rec|Supervisor|319.37|NA|13.59|NA
+Lytle|Winter|Parks and Rec|Specialist|392|NA|16|NA
+Maness|Noah|Parks and Rec|Specialist|15519.66|6.11|16.3|NA
+Marler|Kwang|Parks and Rec|General Manager - Switchyard Park|53575.06|NA|NA|58058.68
+Marotz|Mark|Parks and Rec|Operations Superintendent|57932.87|NA|NA|62781.06
+Marrero|Josue|Parks and Rec|Laborer|15241.21|NA|13.59|NA
+Marshall|Olivia|Parks and Rec|Specialist|256|NA|16|NA
+Martin|Kage|Parks and Rec|Lifeguard|2368.8|NA|13.44|NA
+Martin|Kora|Parks and Rec|Lifeguard|4636.3|NA|13.64|NA
+Martin|Newton|Parks and Rec|Staff Assistant|17096.68|NA|15.03|NA
+Martin|Sebastian|Parks and Rec|Lifeguard|315.84|NA|13.44|NA
+Massaquoi|Elizabeth|Parks and Rec|Leader|3226.99|NA|13.39|NA
+Maynard|Colleen|Parks and Rec|Supervisor|3176.91|NA|13.49|NA
+McBride|Tatom|Parks and Rec|Lifeguard|3558.24|NA|13.44|NA
+McCoy|Emily|Parks and Rec|Attendant|2651.38|NA|13.29|NA
+McDevitt|Paula|Parks and Rec|Administrator|97873.59|NA|NA|106062.29
+McDivitt|Emma|Parks and Rec|Lifeguard|2546.88|NA|13.44|NA
+McGlothlin|Brenda|Parks and Rec|Customer Relations Representative|28532.17|NA|19.83|NA
+McIntire|Jeremy|Parks and Rec|Laborer|17575.87|220.76|13.69|NA
+McMasters|Ian|Parks and Rec|Staff Assistant|17474.67|NA|15.23|NA
+Millar|Krystina|Parks and Rec|Specialist|553.5|NA|18|NA
+Miller|Max|Parks and Rec|Laborer|1676.14|NA|13.49|NA
+Miller|Rebekah|Parks and Rec|Leader|8701.78|NA|13.39|NA
+Mingee|Ralph|Parks and Rec|Laborer|7358.81|NA|13.49|NA
+Monticue|Charlie|Parks and Rec|Staff Assistant|7923.41|45.69|15.23|NA
+Moore|Sarah|Parks and Rec|Laborer|10942.08|5.06|13.49|NA
+Mugele|August|Parks and Rec|Supervisor|8421.31|NA|13.49|NA
+Mullin|Sarah|Parks and Rec|Market Master Specialist|40213.06|NA|NA|43578.34
+Mullis|Mark|Parks and Rec|Laborer|11835.01|NA|13.69|NA
+Murphy|Sanae|Parks and Rec|Leader|1198.41|NA|13.39|NA
+Murray|Jillian|Parks and Rec|Lifeguard|2691.36|NA|13.44|NA
+Naugle|Andrew|Parks and Rec|Specialist|14084|NA|16|NA
+Nelson Laird|Nora|Parks and Rec|Lifeguard|3131.52|NA|13.44|NA
+Nelson|Grace|Parks and Rec|Lifeguard|3410.4|NA|13.44|NA
+Nicholson|Charles|Parks and Rec|Specialist|613.03|NA|18|NA
+Nickless|Aidan|Parks and Rec|Attendant|2655.73|NA|13.29|NA
+Nickless|Logan|Parks and Rec|Laborer|14124.09|NA|13.49|NA
+Niu|Vivian|Parks and Rec|Specialist|264|NA|16|NA
+Noble|Mary|Parks and Rec|Specialist|916|NA|16|NA
+Odden|Fa'aleava|Parks and Rec|Specialist|184|NA|16|NA
+Olesh|Claire|Parks and Rec|Leader|1509.74|NA|13.39|NA
+Oliver|Kalyne|Parks and Rec|Lifeguard|4169.76|NA|13.44|NA
+Ostlund|Jonas|Parks and Rec|Lifeguard|4142.88|NA|13.44|NA
+Owen|Olan|Parks and Rec|Laborer|10144.5|NA|13.49|NA
+Owen|Sarah|Parks and Rec|Community Relations Coordinator|42215.8|NA|NA|45748.7
+Paris|Philip|Parks and Rec|Laborer|39289.26|225.9|20.1|NA
+Paul|Penelope|Parks and Rec|Lifeguard|4408.32|NA|13.44|NA
+Pearson|Erik|Parks and Rec|Program/Facility Coordinator|42180.74|NA|NA|45710.75
+Pedersen|Ellie|Parks and Rec|Attendant|1571.56|NA|13.29|NA
+Pedersen|Scott|Parks and Rec|Sports/Facility Coordinator|42240.86|NA|NA|45748.7
+Perry|Jennifer|Parks and Rec|Specialist|7776|NA|16|NA
+Philbeck|Ethan|Parks and Rec|Customer Relations Representative|26503.51|NA|NA|28735.2
+Pierce|Vicki|Parks and Rec|Supervisor|263.06|NA|13.49|NA
+Piercy|Sydney|Parks and Rec|Lifeguard|2479.68|NA|13.44|NA
+Poer|Caleb|Parks and Rec|Staff Assistant|5593.55|NA|15.03|NA
+Porter|Kyle|Parks and Rec|Supervisor|1858.45|NA|13.59|NA
+Porter|Shelbie|Parks and Rec|Specialist|9984|NA|16|NA
+Prince|Emilie|Parks and Rec|Supervisor|3790.71|NA|13.49|NA
+Puett|Nicholas|Parks and Rec|Staff Assistant|6597.78|NA|15.23|NA
+Putman|Nicholas|Parks and Rec|Leader|3705.7|NA|13.39|NA
+Querry|Shelby|Parks and Rec|Supervisor|4858.49|NA|13.49|NA
+Raake|Grant|Parks and Rec|Attendant|1192.78|NA|13.29|NA
+Ramey|Jeffrey|Parks and Rec|Leader|9172.18|NA|13.39|NA
+Ramey|Julie|Parks and Rec|Community Relations Manager|59360.94|NA|NA|64328.64
+Ramsey|Chris|Parks and Rec|Specialist|3764.25|NA|21|NA
+Ray|Lillian|Parks and Rec|Leader|7468.28|NA|13.39|NA
+Ream|William|Parks and Rec|Program/Facility Coordinator|43871.57|NA|NA|47543.05
+Reed|Charlotte|Parks and Rec|Supervisor|1109.56|NA|13.49|NA
+Rhodes|Ryan|Parks and Rec|Staff Assistant|18080.36|NA|15.13|NA
+Richardson|Cooper|Parks and Rec|Attendant|2152.98|NA|13.29|NA
+Richardson|James|Parks and Rec|Golf Course Superintendent|41515.19|NA|NA|45500
+Richardson|Olivia|Parks and Rec|Staff Assistant|150.3|NA|15.03|NA
+Riester|Cayden|Parks and Rec|Laborer|1976.29|NA|13.49|NA
+Risen|Andrew|Parks and Rec|Attendant|2006.8|NA|13.29|NA
+Risen|Nolan|Parks and Rec|Attendant|1970.25|NA|13.29|NA
+Ritter|Crystal|Parks and Rec|Program/Facility Coordinator|42180.77|NA|NA|45710.75
+Roach|Ellen|Parks and Rec|Intern|750|NA|15|NA
+Robbins|Alexandria|Parks and Rec|Lifeguard|3736.32|NA|13.44|NA
+Robertson|Anthony|Parks and Rec|Equipment Maintenance Mechanic|39688.65|785.45|20.65|NA
+Robertson|Dennis|Parks and Rec|Master Motor Equipment Operator|45320.25|1075.05|23.15|NA
+Robertson|Rick|Parks and Rec|Staff Assistant|12255.32|79.43|15.13|NA
+Robertson|Vicky|Parks and Rec|Staff Assistant|11642.54|NA|15.13|NA
+Robinson|Kyle|Parks and Rec|Attendant|1152.91|NA|13.29|NA
+Rodriguez|Deisdy|Parks and Rec|Leader|6795.46|NA|13.39|NA
+Rollins|Nancy|Parks and Rec|Staff Assistant|22129.19|11.42|15.23|NA
+Rommel|Anna|Parks and Rec|Supervisor|2340.53|NA|13.49|NA
+Rose|Tatum|Parks and Rec|Attendant|1103.08|NA|13.29|NA
+Runyan|Madeline|Parks and Rec|Leader|1750.74|NA|13.39|NA
+Ruthenburg|Jeffrey|Parks and Rec|Laborer|4890.15|NA|13.49|NA
+Ryan|Caitlin|Parks and Rec|Specialist|368|NA|16|NA
+Ryan|Zachary|Parks and Rec|Specialist|1168|NA|16|NA
+Salisbury|James|Parks and Rec|Facility Maintenance Laborer|41896.88|1953.79|20.849999999999998|NA
+Santon|Aleczander|Parks and Rec|Laborer|11972.83|NA|13.59|NA
+Schloesser|Michael|Parks and Rec|Laborer|3584.38|NA|13.59|NA
+Scroggins|Bradley|Parks and Rec|Master Motor Equipment Operator|21822.39|NA|19.6|NA
+Seader|Kate|Parks and Rec|Specialist|12804.1|NA|16.3|NA
+Serriere|Jean-Luc|Parks and Rec|Specialist|19674.15|NA|16.3|NA
+Settle|Clayson|Parks and Rec|Laborer|2694.63|NA|13.49|NA
+Shelton|Melissa|Parks and Rec|Specialist|10444.52|NA|16.5|NA
+Shelton|Sara|Parks and Rec|Laborer|16732.7|NA|13.59|NA
+Shepherd|Larry|Parks and Rec|Staff Assistant|19429.69|NA|15.23|NA
+Shockney|Mathew|Parks and Rec|Supervisor|748.7|NA|13.49|NA
+Shoemaker|Olivia|Parks and Rec|Leader|1610.16|NA|13.39|NA
+Shook|Chloe|Parks and Rec|Supervisor|2610.06|NA|13.69|NA
+Shoufler|Teddie|Parks and Rec|Laborer|1264.69|NA|13.49|NA
+Shrake|Amy|Parks and Rec|Coordinator/Allison Jukebox|45613.86|NA|NA|49431.14
+Silkworth|Zachary|Parks and Rec|Attendant|6055.71|NA|13.29|NA
+Silvers|Reid|Parks and Rec|Attendant|3538.48|NA|13.29|NA
+Sims|Jason|Parks and Rec|Golf Programs Coordinator|42293.06|NA|NA|45751.13
+Sims|Shanda|Parks and Rec|Specialist|25123.75|NA|23|NA
+Skirvin|David|Parks and Rec|Supervisor|5429.74|NA|13.49|NA
+Smalley|Nathan|Parks and Rec|Staff Assistant|12060.03|NA|15.03|NA
+Smith|Haskell|Parks and Rec|Working Foreperson|42933.9|1017.42|21.88|NA
+Smith|Neil|Parks and Rec|Leader|6638.12|NA|13.39|NA
+Smith|Robert|Parks and Rec|Attendant|2252.68|NA|13.29|NA
+Solomon|Jenna|Parks and Rec|Supervisor|6372.77|NA|13.69|NA
+Somes|Brennen|Parks and Rec|Laborer|8819.1|NA|13.49|NA
+Sparks|Joanna|Parks and Rec|City Landscaper|43319.65|NA|NA|46944.92
+Spence|Joylene|Parks and Rec|Leader|6938.93|NA|13.39|NA
+Spencer|Brandie|Parks and Rec|Leader|756.55|NA|13.39|NA
+Spurgeon|Ashley|Parks and Rec|Program Specialist|33655.19|NA|NA|38494.8
+Stallsmith|Lauren|Parks and Rec|Supervisor|12704.56|134.56|13.49|NA
+Stark|Megan|Parks and Rec|Membership Coordinator|42363.58|NA|NA|45907.78
+Steckbeck|Grant|Parks and Rec|Supervisor|478.9|NA|13.49|NA
+Sterner|Mark|Parks and Rec|General Manager TLRC|58695|NA|NA|63400.59
+Stierwalt|Angie|Parks and Rec|Leader|10349.47|NA|13.39|NA
+Stikeleather|Makena|Parks and Rec|Attendant|3581.68|NA|13.29|NA
+Storm|Jackson|Parks and Rec|Attendant|711.88|NA|13.29|NA
+Storm|Shelby|Parks and Rec|Leader|5911.36|NA|13.39|NA
+Storm|Taylor|Parks and Rec|Leader|7002.98|NA|13.39|NA
+Street|Timothy|Parks and Rec|Operations and Development Director|66346.14|NA|NA|75000
+Sturgis|Avery|Parks and Rec|Attendant|5070.15|NA|13.29|NA
+Sturrock|Scot|Parks and Rec|Specialist|25834.29|NA|16.65|NA
+Sullivan|Robert|Parks and Rec|Supervisor|4933.98|NA|13.49|NA
+Swift|Rebecca|Parks and Rec|Natural Resources Coordinator|41523.23|NA|NA|44998.15
+Tallman|Carter|Parks and Rec|Leader|6085.78|NA|13.39|NA
+Taylor|Timothy|Parks and Rec|Laborer|3972.81|NA|13.49|NA
+Teran|Alihandro|Parks and Rec|Staff Assistant|17660.5|NA|15.13|NA
+Thomas|Cameron|Parks and Rec|Laborer|4033.52|NA|13.49|NA
+Thompson|Madeleine|Parks and Rec|Specialist|148|NA|16|NA
+Tierney|Michael|Parks and Rec|Lifeguard|4630.08|NA|13.44|NA
+Trahan|Joseph|Parks and Rec|Supervisor|1709.87|NA|13.49|NA
+Tran|Dung|Parks and Rec|Specialist|517.5|NA|18|NA
+Treat-Liciaga|Kelly|Parks and Rec|Leader|999.63|NA|13.49|NA
+Tubbs|Jeremiah|Parks and Rec|Leader|1198.41|NA|13.39|NA
+Tull|Maggie|Parks and Rec|Working Foreperson - Switchyard|38907.52|NA|20.32|NA
+Turnbull|John|Parks and Rec|Sports Services Director|68656.94|NA|NA|74402.75
+Turner|Diana|Parks and Rec|Attendant|2741.07|NA|13.29|NA
+Turpin|Rob|Parks and Rec|Crew Leader|45388.16|283.2|23.6|NA
+Tuttle|Angela|Parks and Rec|Sports Facility Manager|53992.38|NA|NA|58510.87
+Uhls|Ethan|Parks and Rec|Attendant|9381.92|NA|13.29|NA
+Vaitkus|Margaret|Parks and Rec|Specialist|2408|NA|16|NA
+Vickers-Pruet|Kevin|Parks and Rec|Laborer|1299.44|NA|13.69|NA
+Waddington|Gabriella|Parks and Rec|Specialist|64|NA|16|NA
+Wahl|Jordan|Parks and Rec|Staff Assistant|20787.53|NA|16.65|NA
+Wang|Tzu-ting|Parks and Rec|Laborer|5777.13|NA|13.49|NA
+Warren|Delila|Parks and Rec|Lifeguard|2130.24|NA|13.44|NA
+Wedemeyer|Ryan|Parks and Rec|Attendant|7614.99|NA|13.29|NA
+Wessel|Matthew|Parks and Rec|Leader|6022.17|NA|13.39|NA
+Wetnight|Jackie|Parks and Rec|Specialist|5280|NA|16.5|NA
+Whitney|LaJuan|Parks and Rec|Leader|10307.45|NA|13.39|NA
+Widup|Kyle|Parks and Rec|Attendant|996.51|NA|13.29|NA
+Wilder|Morning|Parks and Rec|Leader|2466.4|NA|13.39|NA
+Williams|Carlie|Parks and Rec|Supervisor|4235.88|NA|13.49|NA
+Williams|David|Parks and Rec|Specialist|2109|NA|38|NA
+Williams|Mackenzie|Parks and Rec|Supervisor|374.35|NA|13.49|NA
+Wilson|Dana|Parks and Rec|Leader|2601.02|NA|13.39|NA
+Winters|Clairessa|Parks and Rec|Leader|9431.73|NA|13.49|NA
+Wood|Jake|Parks and Rec|Laborer|14293.32|22.85|13.49|NA
+Yarbrough|Christian|Parks and Rec|Laborer|4195.39|NA|13.49|NA
+Carter|Elizabeth|Planning & Transportation|Senior Zoning Compliance Planner|45986.64|NA|NA|49835.16
+Clemens|Ryan|Planning & Transportation|MPO Transportation Planner|44066.56|NA|NA|47754.36
+Frost|Darla|Planning & Transportation|Administrative Assistant|33510.18|NA|NA|39602.83
+Greulich II|Eric|Planning & Transportation|Senior Zoning Planner|52219.79|NA|NA|56589.98
+Gulick|Keegan|Planning & Transportation|Zoning and Long Range Planner|40337.75|NA|NA|43713.45
+Holbrow|Gabriel|Planning & Transportation|Zoning Compliance Planner|15226.43|NA|NA|46000
+Kaboli Farshchi|Seyedamir|Planning & Transportation|Long Range Planner|42950.24|NA|NA|46544.58
+Lillard|Carmen|Planning & Transportation|Office Manager|47401.98|NA|NA|51368.95
+Martin|Patrick|Planning & Transportation|Senior Transportation Planner|54540.75|NA|NA|59105.12
+Pazos|Maria|Planning & Transportation|Zoning Planner and GIS Analyst|40415.07|NA|NA|46242
+Rickbeil|Mallory|Planning & Transportation|Bicycle and Pedestrian Coordinator|44067.01|NA|NA|47754.36
+Robinson|Scott|Planning & Transportation|Director|95457.73|NA|NA|103446.36
+Robling|Ryan|Planning & Transportation|Zoning Planner and GIS Analyst|28073.59|NA|NA|46241.61
+Rosenbarger|Elizabeth|Planning & Transportation|Planning Services Manager|62471.63|NA|NA|67699.77
+Scanlan|Jacqueline|Planning & Transportation|Development Services Manager|66589.46|NA|NA|72162.14
+Sharaf|Benjamin|Planning & Transportation|Intern|5202.45|NA|15|NA
+Thompson|Linda|Planning & Transportation|Senior Environmental Planner|51786.06|NA|NA|56119.85
+Adams|Madeline|Police|Telecommunicator|13882.19|692.56|NA|39474
+Alberson|John|Police|Senior Police Officer|71998.29|8399.47|NA|64316
+Aldrich|Betty|Police|Telecommunicator|6989.76|NA|NA|45719.3
+Ash|Kareem|Police|Probationary Police Officer|29099.49|1907.15|NA|50500
+Austin|Kimberly|Police|Records Clerk|36683.55|NA|NA|39753.48
+Babbs|Hanna|Police|Telecommunications Supervisor|54843.01|4543.91|NA|51000
+Bailey|Jarrod|Police|Telecommunications Supervisor|51256.46|11886.45|NA|48500
+Baker|Lewis|Police|Probationary Police Officer|28964.9|1772.56|NA|50500
+Baker|Michael|Police|Senior Police Officer|74825.56|14825.35|NA|63291
+Batcho-Bullerdick|James|Police|Sergeant|71839.99|630|NA|74399
+Bazan|Raymond|Police|Officer First Class|11488.27|NA|NA|59381.36
+Bennett|Don|Police|Officer First Class|5767.34|NA|NA|62056.24
+Bennett|Ellen|Police|Assistant Records Supervisor|49149.23|NA|NA|53262.36
+Bennett|Sally|Police|Telecommunications Supervisor|21492.31|1285.24|NA|56131.91
+Berry|Wade|Police|Senior Police Officer|86141.19|26486.3|NA|64442
+Bickley|Kathryn|Police|Records Clerk|43998.75|3365.64|NA|43487.42
+Borders|Jefferey|Police|Telecommunicator|13971.33|343.56|NA|39700
+Bradburn|Daniel|Police|Probationary Police Officer|33148.94|1880.1|NA|56956
+Brewer|Alexander|Police|Intern|46.52|NA|13.29|NA
+Britton|Elijah|Police|Officer First Class|68795.12|13458.43|NA|59481
+Brogniart|Sabrina|Police|Records Clerk|4497|NA|NA|38974
+Bryan|Connor|Police|Probationary Police Officer|29728.44|2536.1|NA|50500
+Bull|Austin|Police|Officer First Class|13512.57|396|NA|59231.34
+Burns|Benjamin|Police|Sergeant|70802.31|711|NA|74049
+Burnworth|Joshua|Police|Senior Police Officer|66709.53|4435.64|NA|64766
+Butler|Joy|Police|Records Clerk|42190.26|1964.55|NA|43045.94
+Byer|Walker|Police|Records Clerk|28519.16|754.38|NA|43045.94
+Byerley|Aaron|Police|Officer First Class|61606.27|4054.83|NA|59106
+Camble|Demetra|Police|Officer First Class|36687.29|7535.36|NA|62131.38
+Canada|Jeff|Police|Lieutenant|80918.27|233.18|NA|85000
+Carson|Kimberly|Police|Telecommunicator|55765.07|4251.39|NA|55872.99
+Charlier|Javier|Police|Probationary Police Officer|24017.68|2214|NA|50500
+Cole|Dana|Police|Sergeant|87255.22|16243.66|NA|73648
+Crider|Joseph|Police|Senior Police Officer|61815.32|198|NA|63791
+Crose|Olivia|Police|Probationary Police Officer|22179.98|171|NA|56956
+Davis|Karin|Police|Assistant Manager/Training Coordinator|52708.86|NA|NA|57120
+Dawson|Andrew|Police|Officer First Class|67688.41|7573.39|NA|59106
+Deckard|Brandon|Police|Senior Police Officer|59800.46|216|NA|62791
+Deckard|Colin|Police|Probationary Police Officer|35262.58|4593.76|NA|56956
+Derbique|Alexis|Police|Telecommunicator|3509.39|348.61|NA|39743.28
+Diekhoff|Michael|Police|Chief|105301.09|NA|NA|106062.29
+Dilts|Jacqueline|Police|Senior Police Officer|73862.78|9631.8|NA|65291
+Doyle|Eric|Police|Senior Police Officer|67196.75|6952.98|NA|63492
+Dunn|Conner|Police|Senior Police Officer|73263.85|7263.03|NA|65166
+Eccles|Eli|Police|CAD/RMS Data Coordinator|47160.08|NA|NA|51106.79
+Embry|Tamatha|Police|Telecommunicator|9780.67|NA|NA|39474
+Esquivel|Gabriela|Police|Officer First Class|69180.11|12325.29|NA|59006
+Evans|Brittani|Police|Crime Analyst|44237.8|NA|NA|47940
+Fabris|Mark|Police|Sergeant|66109.66|NA|NA|73773.8
+Fisher|James|Police|Officer First Class|27333.64|3663|NA|58481.5
+Forston|Cody|Police|Sergeant|85275.95|14004.08|NA|75444
+Fosnaugh|Anthony|Police|Senior Police Officer|62057.21|288|NA|64166
+Fosnaugh|Lucas|Police|Senior Police Officer|62073.61|NA|NA|62891
+Frank|Kevin|Police|Senior Police Officer|81692.68|19468.95|NA|65466
+Garrett|Tammy|Police|Records Clerk|38956.93|250.85|NA|43480
+Gilmore|Matt|Police|Senior Police Officer|60960.15|NA|NA|64642
+Gladish|Pamela|Police|Sergeant|78421.85|4722.36|NA|75974
+Gresham|Elaine|Police|Executive Assistant|50726.42|NA|NA|54971.61
+Guidry|Chris|Police|Senior Police Officer|60297.37|437.05|NA|63141
+Harris|Idris|Police|Officer First Class|62062.7|6195.64|NA|59006
+Hasler|Jordan|Police|Senior Police Officer|65083.13|2810.72|NA|64716
+He|Tasha|Police|Telecommunicator|40153.61|5170.62|NA|39474
+Heitink|Gerrit|Police|Officer First Class|74438.15|17674.11|NA|58981
+Henry|Joseph|Police|Senior Police Officer|78860.34|14484.62|NA|65866
+Hensley|Amy|Police|Telecommunications Manager|64456.25|NA|NA|69850.38
+Hines|Shawn|Police|Sergeant|96281.29|25922.56|NA|74074
+Hoffmeister|Jonathan|Police|Senior Police Officer|68373.44|5225.51|NA|65666
+Hoppe|Jonathan|Police|Probationary Police Officer|6555.04|45|NA|50500
+Hunter|Jacob|Police|Officer First Class|68123.85|11336|NA|59181
+Hyde|Michelle|Police|Telecommunicator|7567.42|NA|NA|39474
+Jahnke|Jamie|Police|Office Manager|52912.38|6869.39|NA|49895.56
+James|Brian|Police|Senior Police Officer|61929.8|234|NA|64266
+Jarrett|Brittany|Police|Records Supervisor|52238.31|NA|NA|56610
+Jarrett|Kiley|Police|Senior Police Officer|74209.06|9389.27|NA|65916
+Jeffers|William|Police|Senior Police Officer|70297.21|7763.16|NA|66041
+Jordan|Elliott|Police|Sergeant|73466.24|2794.47|NA|73824
+Jurgeto|Taylor|Police|Officer First Class|59508.69|2402.1|NA|59506
+Keen|Tyler|Police|Officer First Class|60746.62|3726.07|NA|58606
+Kelley|Jennifer|Police|Telecommunicator|21175.55|1600.54|NA|43122.72
+Kelley|Peggy|Police|Telecommunicator|30217.57|1312.66|NA|46131.3
+Kepilino|Tabitha|Police|Records Clerk|42267.67|1680.5|NA|43426.94
+Keselich|Ruth|Police|Telecommunicator|60474.43|8994.61|NA|56372.97
+Kincaid|Sean|Police|Senior Police Officer|69260.68|3744|NA|65167
+Kovach|John|Police|Lieutenant|88690.03|5286.06|NA|85000
+Kreuzman|Thomas|Police|Senior Police Officer|63117.65|1701|NA|65167
+Kruse|Dustin|Police|Sergeant|72784.12|2259|NA|73299
+Lantz|Erica|Police|Telecommunications Supervisor|58708.04|7376.9|NA|56131.31
+Lawrence|Anna|Police|Officer First Class|57046.87|NA|NA|59256
+Lewis|Veanna|Police|Telecommunicator|58983.93|8044.13|NA|53410.96
+Lopossa|Brandon|Police|Sergeant|20349.64|376.08|NA|74499
+Lucas|Matt|Police|Sergeant|73134.03|6576.03|NA|72424
+Manuel|Jenna|Police|Telecommunicator|40588.9|4618.74|NA|39474
+McCamey|Blake|Police|Senior Police Officer|82548.52|24534.54|NA|63342
+McCoy|Joshua|Police|Senior Police Officer|91628.61|25560.8|NA|66666
+McCoy|LaSaundra|Police|Social Worker|41938.93|NA|NA|54500
+McGlone|Kyle|Police|Officer First Class|60201.12|2853|NA|60231
+McHugh|Jodi|Police|Telecommunicator|41974.34|5317.64|NA|39753.27
+Miller|Mark|Police|Crime Scene Technician & Property Mgr|46736.74|2518.17|NA|47919.22
+Mitchell|Garrett|Police|Officer First Class|73024.62|14032.07|NA|61456
+Moore|Cole|Police|Community Service Specialist|29379.5|129.49|NA|42250
+Murphy|Brittany|Police|Community Affairs and Accreditation Specialist|44294.5|NA|NA|48001.38
+Murphy|Louellyn|Police|Telecommunications Supervisor|57568.18|6126.38|NA|56131.85
+Muscato|Jonathan|Police|Senior Police Officer|64734.37|1778.21|NA|65666
+Myers|Amy|Police|Community Service Specialist|42362.42|NA|NA|48445
+Nester|Taylor|Police|Telecommunicator|14081.57|683.2|NA|39474
+Oehmich|Melissa|Police|Telecommunicator|56084.28|8452.81|NA|51806
+Oldham|Scott|Police|Captain|89058.02|3454.2|NA|89000
+Oswalt|Jessica|Police|Community Service Specialist|40233.56|NA|NA|43600.69
+Otto|Chad|Police|Telecommunicator|12867|NA|NA|39474
+Parker|William|Police|Pension Secretary|3692.16|NA|NA|4000
+Pedigo|Ryan|Police|Captain|83562.05|NA|NA|89000
+Peeden|Courtney|Police|Telecommunicator|14645.74|21.5|NA|39743.28
+Penter|Nolan|Police|Officer First Class|62051.91|4322.57|NA|60956
+Perry|Dustin|Police|Senior Police Officer|67638.73|5799.15|NA|65116
+Phagan|Mallory|Police|Social Worker|26873.04|NA|NA|51000
+Post|Paul|Police|Senior Police Officer|62850.23|1863|NA|63916
+Pysnack|Nicole|Police|Telecommunicator|39754.59|3233.53|NA|39474
+Qualters|Joseph|Police|Deputy Chief|87312.54|NA|NA|93000
+Rasche|Shane|Police|Sergeant|10462.17|NA|NA|73573.76
+Raybould|Brooke|Police|Telecommunicator|43104.57|5125.18|NA|41032.3
+Raybould|Jeffrey|Police|Senior Police Officer|72322.97|11406.12|NA|64917
+Rees|Jeffrey|Police|Senior Police Officer|69910.66|9553.02|NA|62591
+Rees|Stacy|Police|Front Desk Clerk I/day shift|41360.7|NA|NA|44822.1
+Reynolds|Steven S.|Police|Senior Police Officer|61009.42|108|NA|64266
+Riddle|Lisa|Police|Telecommunicator|47385.23|5659.21|NA|45717.57
+Ridge|James|Police|Officer First Class|69012.9|10197.21|NA|61181
+Roberts|Tyler|Police|Telecommunicator|36970.64|2938.08|NA|40532.32
+Robinson|Kathleen|Police|Telecommunicator|45879.19|5075.34|NA|44001.98
+Rodgers|Jeffrey|Police|Senior Police Officer|106434.19|41158.08|NA|66416
+Romoser|Amy|Police|Senior Police Officer|61286.34|NA|NA|64691
+Ryan|Christopher|Police|Crime Scene Technician & Property Mgr|57334.19|2104.16|NA|59852
+Sager|Trevor|Police|Senior Police Officer|54970.48|36|NA|62791
+Scott|Christopher|Police|Senior Police Officer|78888.73|16651.38|NA|64891
+Shaevitz|Jason|Police|Sergeant|69268.95|NA|NA|73324
+Shaffer|Mark|Police|Officer First Class|20276.66|927|NA|58731.36
+Shannon|Sarah|Police|Officer First Class|57389.79|3609|NA|60856
+Shaw|Lacey|Police|Telecommunicator|39326.61|1809.8|NA|39474
+Shrake|Robert|Police|Senior Police Officer|63711.26|895.68|NA|65266
+Siniard|Brandon|Police|Sergeant|88464.95|17760.73|NA|73073.8
+Skelton|Robert|Police|Sergeant|66869.66|NA|NA|72998.64
+Smith|David|Police|Telecommunicator|9121.01|770.04|NA|39753.27
+Smith|Matthew|Police|Records Clerk|37187.58|NA|NA|39753.48
+Southern|Aiden|Police|Officer First Class|66258.89|10416.64|NA|57431
+Speicher|Amber|Police|Telecommunicator|693.78|NA|NA|38700
+Stephens|Brandi|Police|Custodian|33210.9|NA|NA|36112.67
+Stevens|Jennifer|Police|Officer First Class|60520.22|3298.21|NA|59431
+Stone|Melissa|Police|Social Worker|51701.8|NA|NA|56028.66
+Sturgeon III|Harold|Police|Telecommunicator|46171.72|4282.53|NA|45680.42
+Sutherlin|Heather|Police|Records Clerk|38680.71|1511.05|NA|39753.48
+Sweeden|Robert|Police|Probationary Police Officer|60857.63|3630.5|NA|58106
+Tabor|Justin|Police|Officer First Class|62960.42|3789.4|NA|62131
+Tate|Lucas|Police|Lieutenant|85337.75|2475.61|NA|85000
+Taylor|Joshua|Police|Sergeant|78340.18|7275.68|NA|74449
+Thomas|Kyle|Police|Senior Police Officer|76153.24|12125|NA|66166
+Thompson|Stephanie|Police|Records Clerk|15378.26|NA|NA|43427
+Tibbs|Ryan|Police|Senior Police Officer|72908.87|10158.25|NA|63866
+Tiernan|Katherine|Police|Probationary Police Officer|35149.8|4480.98|NA|56956
+Todd|Lukas|Police|Telecommunicator|11014.23|NA|NA|39474
+Wallace|Torrey|Police|Officer First Class|46977.1|1372.57|NA|60131.46
+Walsh|Connor|Police|Community Service Specialist|29488.55|238.55|NA|42250
+Watkins|Jody|Police|Records Clerk|41309.77|1193.23|NA|43428.24
+Watson|Jessica|Police|Evidence Room Clerk|30165.98|270.53|NA|34102.98
+Wehr|Linda|Police|Records Clerk|41541.66|1380.66|NA|43511.39
+Weisheit|Zach|Police|Senior Police Officer|68499.44|6935.31|NA|63442
+Wells|Cameron|Police|Probationary Police Officer|15883.41|549|NA|56956
+Werner|Brian|Police|Senior Police Officer|66333.08|3244.37|NA|64867
+Williams|Myrick|Police|Lieutenant|86214.29|6291.2|NA|85000
+Willis|Cristina|Police|Special Investigations Clerk|41311.99|1191.49|NA|43478.14
+Wood|Nikki|Police|Officer First Class|45840.99|441|NA|58531
+Woods|Sterling|Police|Officer First Class|19013.07|216|NA|58956.26
+Yates|Niki|Police|Telecommunicator|44520.79|8137.6|NA|39474
+Zahasky|Monica|Police|Senior Police Officer|61837.55|108|NA|65166
+Coletti|Sarah|Public Works|Intern|2724.75|NA|15|NA
+Cox Deckard|Kyla|Public Works|Board Member|1938.24|NA|NA|2100
+Henke|Dana|Public Works|Board Member|1938.24|NA|NA|2100
+Hirtzel|Melissa|Public Works|Customer Relation Representative|33132.15|NA|NA|37000
+Hollingsworth|Beth|Public Works|Board Member|1938.24|NA|NA|2100
+Large|Michael|Public Works|Special Projects & Operations Manager|55438.48|NA|NA|60078
+Nickel|Nathan|Public Works|Data Analyst and Manager|55441.56|NA|NA|60081.44
+Rosenberger|April|Public Works|Office Manager|42355.4|NA|NA|45900
+Smith|Christina|Public Works|Citizen Services Coordinator/Special Projects Manager|56493.45|NA|NA|61004.48
+Wason|Adam|Public Works|Director|95551.14|NA|NA|103446.24
+Armes Jr|Larry|Sanitation|Master Motor Equipment Operator|40287.81|251.4|20.95|NA
+Banks|Jason|Sanitation|Master Motor Equipment Operator|42408.46|936.97|21.48|NA
+Baugh|Dan|Sanitation|Laborer|48049.03|5458.22|22.12|NA
+Brown|Tammy|Sanitation|Crew Leader|46987.59|3828.65|22.470000000000002|NA
+Bruce|Roy|Sanitation|Master Motor Equipment Operator|1068.67|NA|21.32|NA
+Carter|Rhea|Sanitation|Director|54828.15|NA|NA|59421.46
+Chambers|Robert|Sanitation|Laborer|46809.09|4183.33|22.12|NA
+Courter|Michael|Sanitation|Laborer|46529.83|3904.07|22.12|NA
+Dodson|Dave|Sanitation|Master Motor Equipment Operator|22646.92|1900.98|20.1|NA
+East|Robert|Sanitation|Master Motor Equipment Operator|45163.15|2398.68|22.21|NA
+Elkins|Bradley|Sanitation|Master Motor Equipment Operator|41431.36|NA|21.68|NA
+Fields|David|Sanitation|Master Motor Equipment Operator|36853.65|274.95|21.15|NA
+French|Stephen|Sanitation|Motor Equipment Operator|6258.4|396.6|18.55|NA
+Fulford|Kevin|Sanitation|Master Motor Equipment Operator|46125.95|4020.3|21.85|NA
+Ham|Daniel|Sanitation|Crew Leader|45678.7|4350.4|21.740000000000002|NA
+Hite|Andrew|Sanitation|Master Motor Equipment Operator|39528.77|1536|19.900000000000002|NA
+Kinser|Denice|Sanitation|Office Manager|35925.5|NA|NA|38975.8
+Konermann|Casey|Sanitation|Master Motor Equipment Operator|46802.3|4438.18|21.85|NA
+McGlothlin|Johnny|Sanitation|Laborer|6518.85|NA|15|NA
+McIntire|Jerry|Sanitation|Master Motor Equipment Operator|40003.38|29.64|21.48|NA
+Miller|Mike|Sanitation|Master Motor Equipment Operator|40708.16|3307.92|19.900000000000002|NA
+Morrison|Travis|Sanitation|Master Motor Equipment Operator|37430.41|296.09|20.42|NA
+Morrow|Joe|Sanitation|Master Motor Equipment Operator|42832.45|1212.89|21.85|NA
+Neal|John|Sanitation|Laborer|3761.88|NA|14.25|NA
+O'Hara|John|Sanitation|Laborer|4693.65|NA|15|NA
+Pfeiffer|Ryan|Sanitation|Master Motor Equipment Operator|41688.65|1644.45|20.95|NA
+Porter Jr|William|Sanitation|Master Motor Equipment Operator|47244.73|5445.46|22.21|NA
+Richardson|Eric|Sanitation|Master Motor Equipment Operator|10891.04|429.6|21.48|NA
+Stillions|Bo|Sanitation|Laborer|5469.9|NA|15|NA
+Todd|Roger|Sanitation|Master Motor Equipment Operator|27421.88|216.8|21.68|NA
+Wathen|Joshua|Sanitation|Laborer|8417.7|NA|15|NA
+Wolford|Jeff|Sanitation|Master Motor Equipment Operator|35922.28|2315.28|19.08|NA
+Albright|Earl|Street|Crew Leader|47826.85|3726.69|23.05|NA
+Arnold|Mark|Street|Laborer|21696.94|2071.6|22.25|NA
+Axsom|Christina|Street|Asset Clerk|35360.39|NA|NA|38319.64
+Bitner|Daniel|Street|Deputy Director|53283.07|NA|NA|57742.2
+Brewer|Troy|Street|Master Motor Equipment Operator|47593.08|4804.41|22.78|NA
+Capps|Phillip|Street|Master Motor Equipment Operator|47762.12|5198.23|22.41|NA
+Carroll|Tony|Street|Crew Leader|46082.63|3935.23|21.94|NA
+Combs|Levi|Street|Laborer|33373.86|1029.07|21.38|NA
+Corns|Frank|Street|Master Motor Equipment Operator|45835.47|2600.75|22.580000000000002|NA
+Creech|Joseph|Street|MEO Apprentice|40560.42|2442.94|19.900000000000002|NA
+Douglas|Bryce|Street|Laborer|38778.41|NA|20.42|NA
+Drescher|Isaac|Street|Laborer|40737.59|2664.34|19.900000000000002|NA
+Eads|Zachary|Street|Master Motor Equipment Operator|41310.57|1352.51|21.48|NA
+Eagan|Chad|Street|Laborer|38854.31|1688.54|19.900000000000002|NA
+Henderson|Scott|Street|Master Motor Equipment Operator|43397.36|2258.3|21.48|NA
+Henson|Scott|Street|Crew Leader|48552.81|4165.05|22.87|NA
+Hitchcox|Randy|Street|Laborer|41925.18|1586.94|21.15|NA
+Housel|Caleb|Street|Laborer|40101.25|1991.62|20.2|NA
+Hupp|Greg|Street|Laborer|33305.42|1350.36|22.51|NA
+Ingalls|John|Street|Crew Leader|32823.88|3821.87|22.85|NA
+James|Daniel|Street|Master Motor Equipment Operator|42795.06|681.06|23.51|NA
+Johnson|Allan|Street|Master Motor Equipment Operator|44200.51|2678.19|21.68|NA
+Kerr|Jason|Street|Master Motor Equipment Operator|44242.71|5277.64|21.15|NA
+Kinser|Herbert|Street|Signal and Lighting Supervisor|45952.13|NA|NA|49794.38
+Lopossa|Stanley|Street|Master Motor Equipment Operator|728.81|NA|23.51|NA
+Love|Freddie|Street|Laborer|44461.26|3712.76|21.349999999999998|NA
+Lutes|Mike|Street|Master Motor Equipment Operator|48999.75|4043.01|23.51|NA
+McCoy|Sean|Street|MEO Apprentice|43941|4889.78|21.15|NA
+Morris|Jeff|Street|Master Motor Equipment Operator|47055.18|4468.4|22.21|NA
+Oliver|Teena|Street|Data Entry Specialist|3765.59|NA|13.29|NA
+Osteen|Arnold|Street|Laborer|9000.88|141.38|18.85|NA
+Payton|Ronald|Street|Master Motor Equipment Operator|49915.15|6441.83|22.21|NA
+Pursell|Larry|Street|Master Motor Equipment Operator|43446.62|870.75|22.42|NA
+Rains|Landon|Street|Crew Leader|42786.09|1401.79|21.68|NA
+Robertson|Brian|Street|Master Motor Equipment Operator|47906.25|4235.25|22.05|NA
+Ruble|Dareal|Street|Laborer|47844.24|4800.05|22.51|NA
+Shipley|Britt|Street|Master Motor Equipment Operator|48937.49|5894.08|22.580000000000002|NA
+Stephens|Danna|Street|Asset Clerk/Emergency Grants Coordinator|46796.94|NA|NA|50713.26
+Stillions|Aaron|Street|Laborer|10896.61|228.6|18.55|NA
+Stinson|Michael|Street|Traffic Manager|52438.78|NA|NA|56827.21
+VanDeventer|Joseph|Street|Director of Street Operations|75491.67|NA|NA|81803.97
+Wimmer|Jeffrey|Street|Laborer|22979.43|78.4|19.6|NA
+Daily|Diane|Utilities/Accounting|Assistant Accounts Payable Clerk|36294.39|NA|NA|39331.66
+Danzig|Meghan|Utilities/Accounting|Web/Information Manager|42355.41|NA|NA|45900
+Dodds|Paula|Utilities/Accounting|Accounting Manager|49922.11|NA|NA|54099.95
+Guyton|Robin|Utilities/Accounting|Account Collections Specialist|45832.22|NA|NA|49667.82
+Hawkins|Cathy|Utilities/Accounting|Associate Accountant|40215.94|NA|NA|43527.38
+Pettit|Laura|Utilities/Accounting|Assistant Director - Finance|75911.94|NA|NA|82264.85
+Robertson|Kimberly|Utilities/Accounting|Accounts Payable Clerk|46825.45|NA|NA|50744.09
+Shapiro|Lynn|Utilities/Accounting|Office Manager|42281.87|NA|NA|45820.39
+Waldon|Michelle|Utilities/Accounting|Finance Manager|56775.15|NA|NA|61526.5
+Beaty|Sabrina|Utilities/Billings & Collections|Customer Relations Representative|34195.71|NA|NA|37075.07
+Blevins|Teresa|Utilities/Billings & Collections|Accounts Receivable Manager|45508.56|NA|NA|49317
+Davis-King|Darbi|Utilities/Billings & Collections|Accounting Clerk|38758.96|NA|NA|42311.11
+Hillenburg|Kimberly|Utilities/Billings & Collections|Customer Relations Representative|26567.45|NA|NA|38375.14
+Blake|Victor|Utilities/Blucher Poole|Wastewater Plant Operator|49353|7963.08|21.95|NA
+Burnworth|Zachary|Utilities/Blucher Poole|Wastewater Plant Operator|45448.19|8648.83|19.86|NA
+Gaither|David|Utilities/Blucher Poole|Wastewater Plant Operator|57959.89|14855.77|22.56|NA
+George|Donnie|Utilities/Blucher Poole|Laborer|46440.98|5839.52|21.15|NA
+Houshour|Robert|Utilities/Blucher Poole|Maintenance Coordinator|54172.65|238.51|NA|58366.44
+Jacobs|Mark|Utilities/Blucher Poole|Wastewater Plant Operator|51613.41|8510.74|22.65|NA
+Keene|John|Utilities/Blucher Poole|Wastewater Plant Operator|63137.44|18614.83|24.41|NA
+Malicoat|Curtiss|Utilities/Blucher Poole|Wastewater Plant Operator|57892.27|12482.43|24.04|NA
+Potts|Joseph|Utilities/Blucher Poole|Superintendent|63072.51|NA|NA|72268.26
+Sexton|Richard|Utilities/Blucher Poole|Master Motor Equipment Operator|39241.73|279.72|23.310000000000002|NA
+Webb|Richard|Utilities/Blucher Poole|Wastewater Plant Operator|15770.52|1853.28|23.76|NA
+Werner|Joe|Utilities/Blucher Poole|Wastewater Plant Operator|65086.11|16918.18|25.46|NA
+White|James|Utilities/Blucher Poole|Wastewater Plant Operator|46574.06|7936.81|20.39|NA
+White|Jeff|Utilities/Blucher Poole|Master Motor Equipment Operator|22046.02|329.03|19.08|NA
+Winks|Wendell|Utilities/Blucher Poole|Wastewater Plant Operator|59362.18|16339.12|22.56|NA
+Bender|Beth|Utilities/Communications|Communications Operator|44684.04|7834.6|NA|39923.52
+Dill|Jerrod|Utilities/Communications|Communications Operator|25900.97|5760.46|NA|31824
+Edwards|Terri|Utilities/Communications|Communications Operator|36835.26|3786.6|NA|36112.67
+Frank|Daniel|Utilities/Communications|Communications Operator|11452.87|341.16|NA|36113
+Lawyer|Barbara|Utilities/Communications|Communications Operator|8490.9|13.03|NA|36126
+Lucas|Ryanne|Utilities/Communications|Communications Operator|11418.04|862.26|NA|36112
+Reschke|Laura|Utilities/Communications|Communications Operator|39489.3|2647.43|NA|39924.98
+Walden|Tony|Utilities/Communications|Communications Operator|28335.17|NA|NA|39924.98
+Weisstein|Miki|Utilities/Communications|Communications Operator|2990.18|212.25|NA|36113
+Henderson|Edith|Utilities/Customer Relations|Customer Relations Representative|39174.95|NA|NA|42365.18
+Johnson|Tammy|Utilities/Customer Relations|Customer Relations Representative|37257.58|NA|NA|40394.86
+Johnson|Triana|Utilities/Customer Relations|Customer Relations Manager|50049.86|NA|NA|54238.42
+Monyhan|Missy|Utilities/Customer Relations|Customer Relations Representative|38875.05|NA|NA|42372.74
+Reagan|Ryann|Utilities/Customer Relations|Customer Relations Representative|36075.62|NA|NA|40394
+Axsom|Tom|Utilities/Department of the Director|Assistant Director of Operations|76091.76|NA|NA|82459.77
+Burleson|Bradley|Utilities/Department of the Director|Data Analyst and Manager|16466.94|NA|18|NA
+Kelson|Victor|Utilities/Department of the Director|Director|100570.49|NA|NA|108959.82
+McLauchlin|Holly|Utilities/Department of the Director|Public Affairs Specialist|47507.2|NA|NA|51500
+Minor|Jill|Utilities/Department of the Director|Data Analyst|47061.5|NA|NA|51000
+Rafano|Bryan|Utilities/Department of the Director|Payroll Administrator|35411.67|27.67|NA|38375.13
+Teague|LaTreana|Utilities/Department of the Director|Administrative Assistant|37412.85|NA|NA|40543.78
+Whaley|Nora|Utilities/Department of the Director|Specialist|11907.96|NA|13.29|NA
+Branam|Jack|Utilities/Dillman|Seasonal Laborer|13920|NA|15|NA
+Covey|Thomas|Utilities/Dillman|Wastewater Plant Operator|55382.36|12567.57|23.15|NA
+DeFelice|Gene|Utilities/Dillman|Plant Maintenance Mechanic|6385.31|80.27|19.46|NA
+Dishman|Adam|Utilities/Dillman|Wastewater Plant Operator|48513.6|9763.6|20.56|NA
+Fluke|Terry|Utilities/Dillman|Wastewater Plant Operator|47720.12|9528.08|24.91|NA
+Harden|Rose|Utilities/Dillman|Plant Maintenance Mechanic|48925.37|2402.81|24.24|NA
+Henderson|Wayne|Utilities/Dillman|Solids Handling Supervisor|59021.52|NA|NA|63960.94
+Jacobs|Timothy|Utilities/Dillman|Plant Maintenance Mechanic|38559.61|9498.48|20.49|NA
+Lagenour|Perry|Utilities/Dillman|Plant Maintenance Mechanic|15536.71|1625.31|19.47|NA
+Lasher|Jason|Utilities/Dillman|Wastewater Plant Operator|22576.92|4914.96|19.33|NA
+May|Greg|Utilities/Dillman|Wastewater Plant Operator|52293.13|10885.21|22.56|NA
+Miller|Debbie|Utilities/Dillman|Secretary|34725.32|NA|NA|37947.75
+Mitchner|Jeffrey|Utilities/Dillman|Master Motor Equipment Operator|65898.4|20086.65|23.680000000000003|NA
+Myers|Timothy|Utilities/Dillman|Maintenance Coordinator|59244.95|NA|NA|64203.08
+Ortiz-Sanchez|Hector|Utilities/Dillman|Wastewater Plant Operator|53498.09|9484.4|23.22|NA
+Paschall|Kenneth|Utilities/Dillman|Wastewater Plant Operator|21498.17|3080.16|21.39|NA
+Smith|Jordan|Utilities/Dillman|Wastewater Plant Operator|53378.09|11786.51|22.04|NA
+Stacy|Austin|Utilities/Dillman|Wastewater Plant Operator|25827.36|5198.21|19.45|NA
+Starks|Anna|Utilities/Dillman|Intern|2275.05|NA|15|NA
+Towell|Garrett|Utilities/Dillman|Dillman Superintendent|68682.3|NA|NA|74430.13
+Werner|Laura|Utilities/Dillman|Wastewater Plant Operator|62142.3|17638.84|23.779999999999998|NA
+Williams|Kevin|Utilities/Dillman|Wastewater Plant Operator|57438.83|11494.83|24.76|NA
+Axsom|Nancy|Utilities/Engineering|Project Coordinator|48222.12|NA|NA|52257.72
+Blair|Meghan|Utilities/Engineering|Assistant GIS Coordinator|7153.86|NA|NA|46500
+Carter|Michael|Utilities/Engineering|Project Coordinator|34018.41|NA|NA|51603.84
+Fleig|Jane|Utilities/Engineering|Utilities Engineer|79748.98|NA|NA|86422.88
+Flora|Liberty|Utilities/Engineering|Environmental Program Coordinator|45602.74|NA|NA|49419
+Gray|David|Utilities/Engineering|Specialist|7451.5|NA|25|NA
+Hudson|Daniel|Utilities/Engineering|Capital Projects Manager|68709.82|NA|NA|74460
+Love|Eric|Utilities/Engineering|Utilities Inspector|44667.87|138.73|NA|47677.02
+Lucas|Tonia|Utilities/Engineering|Utilities Technician|46900.09|552.37|NA|50226.42
+McGlothlin|Sheila|Utilities/Engineering|Administrative and Project Coordinator|48351.93|NA|NA|52398.39
+Myers|David|Utilities/Engineering|Utilities Inspector|45305|NA|NA|48987.99
+Nettleton|Greg|Utilities/Engineering|Senior Project Coordinator|50815.41|NA|NA|55068.07
+Peden|Philip|Utilities/Engineering|Utilities Engineer|78200.13|NA|NA|84744.5
+Powell|Troy|Utilities/Engineering|Senior Project Coordinator|53066.95|NA|NA|57508.08
+Rains|Clayton|Utilities/Engineering|Utilities Technician|40125.98|NA|NA|44500
+Ramey|Jay|Utilities/Engineering|Utilities Technician|46291.06|NA|NA|50165.12
+Runyon|Mike|Utilities/Engineering|Utilities Inspector|45990.92|635.91|NA|48987.99
+Schroeder|Bradley|Utilities/Engineering|Assistant Director|86863.68|NA|NA|94133.12
+Winkle|Charles|Utilities/Engineering|GIS Coordinator|55140.13|NA|NA|59754.62
+Zimmerman|Travis|Utilities/Engineering|Assistant GIS Coordinator|26003.26|NA|NA|45780.72
+Abbott|Craig|Utilities/Environmental Services|Chemist|60824.45|NA|NA|65914.66
+Arthur|Samuel|Utilities/Environmental Services|Lineperson|40173.76|581.58|20.79|NA
+Baca|Emily|Utilities/Environmental Services|Specialist|1269|NA|18|NA
+Cornwell|Alisha|Utilities/Environmental Services|Lab Technician I|41331.98|2452.8|20.25|NA
+Eads|Brian|Utilities/Environmental Services|Laborer|4619.55|NA|15|NA
+Hall|James|Utilities/Environmental Services|Assistant Director - Environmental Programs|66589.47|NA|NA|72162.14
+Hendon|Nolan|Utilities/Environmental Services|Conservation & Energy Resource Manager|48922.36|NA|NA|53015.85
+Herr|Nathan|Utilities/Environmental Services|Environmental Programs Specialist|45179.14|NA|NA|48960
+Komasinski|Nicholas|Utilities/Environmental Services|Water Quality Specialist|6962.8|NA|20|NA
+Lindberg|Kriste|Utilities/Environmental Services|Education Specialist|38344.98|NA|NA|41554
+McFarland|Bailey|Utilities/Environmental Services|Water Quality Specialist|6350|NA|20|NA
+Morris|Nicolette|Utilities/Environmental Services|Lab Technician I|10381|NA|19.2|NA
+Moy|Carole|Utilities/Environmental Services|Lab Technician I|17601.44|NA|21.03|NA
+Ramey|Billy|Utilities/Environmental Services|Laborer|4614.9|NA|15|NA
+Reynolds|Robert|Utilities/Environmental Services|Laborer|6880.65|NA|15|NA
+Scheiber|Logan|Utilities/Environmental Services|Intern|5524|NA|13.29|NA
+Shaber|Melissa|Utilities/Environmental Services|MS4 Coordinator|12749.99|NA|NA|51000
+Solbrig|Brent|Utilities/Environmental Services|Laborer|37851.33|161.73|19.8|NA
+Steele|Shawn|Utilities/Environmental Services|Lab Technician I|42455.77|2762.73|21.11|NA
+Steury|Lores Tyler|Utilities/Environmental Services|Water Quality Coordinator|47462.24|NA|NA|51434.31
+Thetonia|Kelsey|Utilities/Environmental Services|MS4 Coordinator|4159.13|NA|NA|49158.9
+Wenning|Jason|Utilities/Environmental Services|Pretreatment Program Coordinator|49061.24|NA|NA|53499.8
+White|Kevin|Utilities/Environmental Services|Pretreatment Program Inspector|46306.34|NA|NA|50181.55
+Zaiger|Katherine|Utilities/Environmental Services|MS4 Program Coordinator|15615.39|NA|NA|58000
+Axsom|Toby|Utilities/Meter Services|Meter Technician II|43005.18|NA|21.77|NA
+Baugh|Kimberly|Utilities/Meter Services|Meter Reader|38479.55|NA|19.99|NA
+Buczolich|Frank|Utilities/Meter Services|Meter Technician II|916.4|NA|22.91|NA
+Fox|Joshua|Utilities/Meter Services|Meter Reader|36793.04|NA|19.47|NA
+Jackson|Robert|Utilities/Meter Services|Meter Service Person|41662.88|1073.39|21.15|NA
+Johnson|Kenneth|Utilities/Meter Services|Assistant Superintendent|53481.18|5987.17|NA|51468.59
+Koontz|Tracy|Utilities/Meter Services|Meter Reader|32860.8|NA|19.47|NA
+Mathews|John Eddie|Utilities/Meter Services|Meter Serviceperson|42968.97|200.25|22.25|NA
+Moore|Barry|Utilities/Meter Services|Meter Serviceperson|43467.4|3449.68|20.78|NA
+Oakley|Phillip|Utilities/Meter Services|Meter Serviceperson|56155.22|13452.17|22.25|NA
+Snedegar|Robert|Utilities/Meter Services|Meter Serviceperson|47094.58|5764.74|21.51|NA
+Trotter|Kimberly|Utilities/Meter Services|Meter Service Representative|45796.99|6650.34|NA|42414.66
+Wever|James|Utilities/Meter Services|Meter Serviceperson|30273.87|1156.91|21.88|NA
+Wilson|Matt|Utilities/Meter Services|Meter Reader|37628.02|NA|19.99|NA
+Cave|John|Utilities/Monroe Plant|Water Plant Operator|56522.16|15063.48|22.56|NA
+Cunningham|Joe|Utilities/Monroe Plant|Water Plant Operator|61884.14|12196.66|26.939999999999998|NA
+Dooley|Dennis|Utilities/Monroe Plant|Water Plant Operator|27162.28|6934.2|19.33|NA
+Eller|Jason|Utilities/Monroe Plant|Maintenance Coordinator|55082.15|NA|NA|59691.91
+Gramlich|Don|Utilities/Monroe Plant|Superintendent|68630.49|NA|NA|74374.04
+Ira|Shane|Utilities/Monroe Plant|Water Plant Operator|59942.43|9004.23|26.619999999999997|NA
+Johnson|Chris|Utilities/Monroe Plant|Plant Maintenance Mechanic|51379.44|7749.75|22.81|NA
+Medsker|Shawn|Utilities/Monroe Plant|Water Plant Operator|59487.69|11006.61|25.72|NA
+Perry|Heather|Utilities/Monroe Plant|Intern|7968.75|NA|15|NA
+Rogers|Daniel|Utilities/Monroe Plant|Water Plant Operator|44749.81|8044.74|26.29|NA
+Steury|Doug|Utilities/Monroe Plant|Water Plant Operator|65225.59|12373.65|28.090000000000003|NA
+Strafaci|David|Utilities/Monroe Plant|Water Plant Operator|47339.17|11352.69|19.33|NA
+Tracey|Sara|Utilities/Monroe Plant|Water Plant Operator|60570.41|10353.41|25.72|NA
+Vaughn|Chris|Utilities/Monroe Plant|Water Plant Operator|61480.01|6946.25|28.41|NA
+Avendano|Gabe|Utilities/Purchasing|Laborer|30588.51|180.86|19.6|NA
+Boruvka|Elise|Utilities/Purchasing|Specialist|16737.12|NA|18|NA
+Eberle|Christopher|Utilities/Purchasing|Laborer|51442.09|11401.65|20.95|NA
+Krebbs|Austin|Utilities/Purchasing|Inventory Coordinator|40070.45|945.69|NA|42301.82
+McKnight|Kevin|Utilities/Purchasing|Working Foreperson|55700.47|12785.72|22.28|NA
+Shaw|Cindy|Utilities/Purchasing|Purchasing Manager|49885.57|NA|NA|54055.89
+Steele|Susan|Utilities/Purchasing|Purchasing Buyer|39170.2|NA|NA|42448.32
+Bennington|Austin|Utilities/Stormwater|Laborer|8278.59|658.58|19.05|NA
+Boden|Andrew|Utilities/Stormwater|Laborer|39264.8|NA|21.12|NA
+Douglas|David|Utilities/Stormwater|Master Motor Equipment Operator|48284.67|8180.98|21.15|NA
+Elkins|Levi|Utilities/Stormwater|Lineperson|47104.71|741.13|24.17|NA
+Hoene|Robert|Utilities/Stormwater|Lineperson|33948.22|268.87|20.69|NA
+Sherfield|Edward|Utilities/Stormwater|Assistant Superintendent|10445.52|NA|NA|61950.59
+Shipley|Roger|Utilities/Stormwater|Engineering Field Technician|47866.4|204.22|NA|51488.41
+Vaught|Tim|Utilities/Stormwater|Laborer|11140.14|NA|20.1|NA
+Abrams|Dennis|Utilities/T & D|Master Motor Equipment Operator|40260.7|321.34|21.15|NA
+Arthur|Ron|Utilities/T & D|Laborer|42072.51|315|21.88|NA
+Breton|Sean|Utilities/T & D|Master Motor Equipment Operator|41061.71|2233.36|20.95|NA
+Brothers|Jeremy|Utilities/T & D|Lift Station Mechanic|50226.37|8212.93|21.87|NA
+Campbell|Noah|Utilities/T & D|Laborer|40513.88|1326.46|20.42|NA
+Chasteen|Paul|Utilities/T & D|Engineering Field Technician|49394.57|NA|NA|53528.26
+Christy|Alan|Utilities/T & D|Lineperson|19779.61|370.65|18.85|NA
+Deckard|Jonathon|Utilities/T & D|Master Motor Equipment Operator|42023.28|798.3|21.48|NA
+Eads|Tony|Utilities/T & D|Assistant Superintendent|54158.15|1721.04|NA|56825.45
+Eagan|Chris|Utilities/T & D|Laborer|17150.68|515.87|19.37|NA
+Eberle|Christian|Utilities/T & D|Master Motor Equipment Operator|5175.63|596.43|19.08|NA
+Edwards|Adam|Utilities/T & D|Lineperson|28735.78|NA|22.94|NA
+Elkins II|Bradley|Utilities/T & D|Laborer|41317.34|2020.57|20.95|NA
+Fluke|Andy|Utilities/T & D|Master Motor Equipment Operator|32048.43|NA|22.78|NA
+Flynn|Garret|Utilities/T & D|Laborer|15481.99|10.79|18.85|NA
+Frye|Allan|Utilities/T & D|Lift Station Mechanic|49950.29|8978.05|21.35|NA
+Gill|Justin|Utilities/T & D|Laborer|10595.45|NA|13.29|NA
+Griffin|Joseph|Utilities/T & D|Laborer|6240|NA|15|NA
+Grubb-Flick|Angie|Utilities/T & D|T & D/Meter Operations Coordinator|46766.87|NA|NA|50680.51
+Hardin|Kedrick|Utilities/T & D|Laborer|38076.08|85.67|20.1|NA
+Hardin|Larry|Utilities/T & D|Assistant Superintendent|59156.46|3503.55|NA|60310.38
+Hobbs|Mike|Utilities/T & D|Master Motor Equipment Operator|44730.37|319.08|23.01|NA
+Hollingsworth|Hunter|Utilities/T & D|Lineperson|45174.24|6379.59|20.69|NA
+Hopkins|Ruby|Utilities/T & D|Intern|2578.8|NA|15|NA
+Housel|Kevin|Utilities/T & D|Assistant Superintendent|59840.19|3143.38|NA|61441.68
+Hughes|Charles|Utilities/T & D|MEO Apprentice|9062|177.42|18.85|NA
+Kinser|Matthew|Utilities/T & D|Assistant Superintendent|50277.05|926.73|NA|53484.88
+Klarich|Dan|Utilities/T & D|Engineering Field Technician|48765.27|499.79|NA|52304.72
+Knight|Kyle|Utilities/T & D|Lineperson|45500.52|2459.22|22.41|NA
+Lagneaux|Maurice|Utilities/T & D|Lift Station Mechanic|48821.44|1211.76|24.91|NA
+McGlothlin|Steve|Utilities/T & D|Laborer|45968.4|1595.28|23.12|NA
+McHaley|Jerry|Utilities/T & D|Engineering Field Technician|47979.7|NA|NA|51832.37
+Moore|John|Utilities/T & D|Master Motor Equipment Operator|35005.66|2930.58|19.900000000000002|NA
+Moore|Ryan|Utilities/T & D|Laborer|41085.69|315|21.310000000000002|NA
+Ortiz-Sanchez|Ramon|Utilities/T & D|MEO Apprentice|9520.92|529.32|19.05|NA
+Powell|Kathleen|Utilities/T & D|Secretary|39247|NA|NA|42531.53
+Prince|Brandon|Utilities/T & D|Assistant Director|73933.89|NA|NA|80121.2
+Raper|Mark|Utilities/T & D|Lineperson|23206.15|NA|24.41|NA
+Robertson|Steve|Utilities/T & D|Lift Station Mechanic|48812.99|1694.87|24.55|NA
+Robertson|William|Utilities/T & D|Laborer|2207.07|699.07|18.85|NA
+Smith|Eric|Utilities/T & D|Lift Station Mechanic|50660.22|15517.09|20.810000000000002|NA
+Sparks|Terry|Utilities/T & D|Master Motor Equipment Operator|28766.11|NA|22.41|NA
+Throop|Adam|Utilities/T & D|Lineperson|42455.88|2490.11|21.21|NA
+Tiller|Foster|Utilities/T & D|Seasonal Laborer|13882.5|NA|15|NA
+Usrey|Brian|Utilities/T & D|Lineperson|46349.62|555.93|23.91|NA
+Waldridge|Jerry|Utilities/T & D|Laborer|41923.96|315|21.68|NA
+Wall|Danny|Utilities/T & D|Laborer|41357.83|487.23|21.310000000000002|NA
+Wever|Cory|Utilities/T & D|Master Motor Equipment Operator|22434.16|NA|21.91|NA
+White|Justin|Utilities/T & D|Assistant Superintendent|48360.8|1669.69|NA|51000
+Zike|Jared|Utilities/T & D|Master Motor Equipment Operator|46889.12|2208.8|23.28|NA
+Banach|Jason|Utilities/Utility Service Board'|Board Member|1316.56|NA|NA|4300
+Burnham|Amanda|Utilities/Utility Service Board'|Board Member|3949.68|NA|NA|4300
+Capler|Jean|Utilities/Utility Service Board'|Board Member|3949.68|NA|NA|4300
+Ehman|Jeffrey|Utilities/Utility Service Board'|Board Member|3949.68|NA|NA|4300
+Parmenter|Megan|Utilities/Utility Service Board'|Board Member|3949.68|NA|NA|4300
+Roberts|Julie|Utilities/Utility Service Board'|Board Member|3949.68|NA|NA|4300
+Sherman|Steven|Utilities/Utility Service Board'|Board Member|3949.68|NA|NA|4300
+White|Kirk|Utilities/Utility Service Board'|Board Member|2303.98|NA|NA|4300

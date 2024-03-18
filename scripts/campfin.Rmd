@@ -1,0 +1,152 @@
+---
+title: "Campaign Finance"
+output: 
+---
+
+FEC bulk data URL: https://www.fec.gov/data/browse-data/?tab=bulk-data
+Data from the 2021-2022 election cycle - Midterm election
+
+```{r}
+library(tidyverse)
+library(lubridate)
+```
+
+```{r}
+transactions <- read_csv("data/transactions.csv")
+transaction_types <- read_csv("data/transaction_types.csv")
+candidates <- read_csv("data/candidates.csv")
+committees <- read_csv("data/committees.csv")
+```
+
+What transaction types are we working with?
+```{r}
+transactions %>% 
+  count(transaction_tp)
+```
+
+Join two transaction types
+Test first
+```{r}
+transaction_types %>% 
+  count(transaction_tp) %>% 
+  arrange(desc(transaction_tp))
+#This gives you the count, you're looking for nothing greater than one.
+
+#OR 
+transaction_types %>% 
+  count(transaction_tp) %>% 
+  filter(n > 1)
+#No duplicates 
+```
+
+Left join
+```{r}
+transactions %>% 
+  left_join(transaction_types, by = "transaction_tp")
+#first check: are the results = rows in main table?
+
+#second check: are there any rows where the joined columns are NA?
+transactions %>% 
+  left_join(transaction_types, by = "transaction_tp") %>% 
+  filter (is.na(transaction_desc))
+# no missing values 
+
+# check the code and desc matchups
+transactions %>% 
+  left_join(transaction_types, by = "transaction_tp") %>% 
+  count(transaction_tp, transaction_desc)
+
+#optional step is to create a new table from the join: 
+transaction2 <- transactions %>% 
+  left_join(transaction_types, by = "transaction_tp")
+```
+
+How much money was spent for each transaction type?
+```{r}
+transaction2 %>% 
+  group_by(transaction_desc) %>% 
+  summarise(tot_amt = sum(transaction_amt)) %>% 
+  arrange(desc(tot_amt))
+
+transaction2 %>% 
+  group_by(transaction_desc) %>% 
+  summarise(tot_amt = sum(transaction_amt), n = n()) %>% 
+  arrange(desc(tot_amt))
+#n = n() is essentially the count function inside of summarise.
+```
+
+Which candidates are in our data?
+```{r}
+transaction2 %>% 
+  count(cand_id) %>% 
+  arrange(desc(n))
+#35 candidates in our data
+
+transaction2 %>% 
+  count(cand_id) %>% 
+  arrange(desc(n)) %>% 
+  left_join(candidates, by = "cand_id")
+
+```
+
+Which candidate had the most money spent on them in independent expenditures?
+```{r}
+transaction2 %>% 
+  left_join(candidates, by = "cand_id") %>% 
+  filter(transaction_tp == "24A" | transaction_tp == "24E") %>% 
+  group_by(cand_name) %>% 
+  summarise(total_amt = sum(transaction_amt)) %>% 
+  arrange(desc(total_amt))
+```
+
+```{r}
+#look at opposing
+transaction2 %>% 
+  left_join(candidates, by = "cand_id") %>% 
+  filter(transaction_tp == "24A") %>% 
+  group_by(cand_name) %>% 
+  summarise(total_amt = sum(transaction_amt)) %>% 
+  arrange(desc(total_amt))
+
+#look at advocating
+transaction2 %>% 
+  left_join(candidates, by = "cand_id") %>% 
+  filter(transaction_tp == "24E") %>% 
+  group_by(cand_name) %>% 
+  summarise(total_amt = sum(transaction_amt)) %>% 
+  arrange(desc(total_amt))
+```
+
+Can we make this code more efficient so we're not repeating ourselves
+```{r}
+transaction2 %>% 
+  filter(transaction_tp %in% c("24A", "24E")) %>% 
+  left_join(candidates, by = "cand_id") %>% 
+  group_by(cand_name, transaction_tp) %>% 
+  summarise(total_amt = sum(transaction_amt)) %>% 
+  pivot_wider(names_from = transaction_tp, values_from = total_amt) %>% 
+  mutate(total = sum(`24A`, `24E`, na.rm=T))
+ 
+#can add percentage
+transaction2 %>% 
+  filter(transaction_tp %in% c("24A", "24E")) %>% 
+  left_join(candidates, by = "cand_id") %>% 
+  group_by(cand_name, transaction_tp) %>% 
+  summarise(total_amt = sum(transaction_amt)) %>% 
+  pivot_wider(names_from = transaction_tp, values_from = total_amt) %>% 
+  mutate(total = sum(`24A`, `24E`, na.rm=T), opposing_pct = `24A`/total) %>% 
+  arrange(desc(opposing_pct))
+#mark mccloskey had 100% opposing 
+```
+
+Who are the committees spending this independent expenditure money?
+```{r}
+transaction2 %>% 
+  filter(transaction_tp %in% c("24A", "24E")) %>% 
+  left_join(committees, by = "cmte_id") %>% 
+  group_by(cmte_nm) %>% 
+  summarise(total = sum(transaction_amt)) %>% 
+  arrange(desc(total))
+```
+
+

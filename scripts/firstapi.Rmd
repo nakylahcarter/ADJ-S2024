@@ -1,0 +1,28 @@
+---
+title: "First API"
+output: html_notebook
+---
+
+API Endpoint: https://data.cityofnewyork.us/resource/h9gi-nx95.csv
+Main Page: https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data 
+
+```{r}
+# install.packages("RSocrata")
+# install.packages("readxl")
+
+library(RSocrata)
+library(tidyverse)
+library(readxl)
+```
+
+```{r}
+crashes <- read.socrata("https://data.cityofnewyork.us/resource/h9gi-nx95.csv")
+write_csv(crashes, "data/nyc_crashes.csv")
+
+#load data dictionary from file, specifying sheet by name or number, skip is for rows 
+datadict <- read_excel("data/MVCollisionsDataDictionary_20190813_ERD.xlsx", sheet=2, skip=1)
+
+#try downloading directly from web, didn't work
+read_excel("https://data.cityofnewyork.us/api/views/h9gi-nx95/files/bd7ab0b2-d48c-48c4-a0a5-590d31a3e120?download=true&filename=MVCollisionsDataDictionary_20190813_ERD.xlsx", sheet=2, skip = 1)
+```
+

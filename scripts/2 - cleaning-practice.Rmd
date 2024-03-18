@@ -1,0 +1,182 @@
+---
+title: "Cleaning practice"
+output: 
+---
+
+LIBRARIES:
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(readxl)
+```
+
+DATA (located in Files on Canvas):
+
+```{r}
+# transactions file from our earlier work with FEC Campaign Finance
+transactions <- read_csv("data/transactions.csv")
+
+# deaths file h/t Mary Jo Webster, data editor of the Minnesota Star Tribune
+mn_deaths <- read_csv("data/MN_opiate_deaths.csv")
+
+# a Census Bureau file of population by state for five years, 2018 - 2022
+state_pop <- read_csv("data/state_pop.csv")
+```
+
+TASKS: `transactions`
+
+1.  convert the transaction_dt to a true date column
+```{r}
+glimpse(transactions)
+
+transactions %>% mutate(trans_dt_proper = mdy(transaction_dt)) %>% 
+  select(trans_dt_proper, transaction_dt)
+
+transactions <- transactions %>% mutate(trans_dt_proper = mdy(transaction_dt), .after= transaction_dt)
+```
+
+2.  create a new column in the `transactions` table that is a 5-digit zip code (always the first 5 when there are 9 digits.)
+```{r}
+transactions %>% mutate(new_zipcode = str_sub(zip_code, 1, 5)) %>% 
+  select(zip_code, new_zipcode)
+
+transactions <- transactions %>% mutate(new_zipcode = str_sub(zip_code, 1, 5), .after= zip_code)
+```
+
+
+TASKS: `mn_deaths`
+
+1.  check if there are duplicates (using StateID & using names/dob)
+There are no duplicates. 
+```{r}
+glimpse(mn_deaths) #3807 rows
+
+mn_deaths %>% distinct() #3807 rows
+
+mn_deaths %>% count(STATEID) %>% arrange(desc(n))
+#no duplicate state id's
+
+mn_deaths %>% count(BIRTHDATE) %>% arrange(desc(n))
+# duplicate birthdays
+
+mn_deaths %>% count(BIRTHDATE) %>% filter(n > 1) 
+#337 dates with multiple birthdays 
+
+mn_deaths %>% distinct(FIRSTNAME, MIDDLENAME, LASTNAME)
+#3805 distinct names
+
+mn_deaths %>% count(FIRSTNAME, MIDDLENAME, LASTNAME) %>% arrange(desc(n))
+# Eric James Anderson has two entries. Lisa Marie Smith has two entries. 
+
+mn_deaths %>% filter(FIRSTNAME == "ERIC" & MIDDLENAME == "JAMES" & LASTNAME == "ANDERSON")
+# Although two entries, the names have different STATEID's and different birth dates. 
+
+mn_deaths %>% filter(FIRSTNAME == "LISA" & MIDDLENAME == "MARIE" & LASTNAME == "SMITH")
+# Although two entries, the names have different STATEID's and different birth dates. 
+```
+
+2.  check / clean up HISPANICETHNICITY (into standardized values)
+```{r}
+mn_deaths %>% select(HISPANICETHNICITY)
+
+mn_deaths %>% count(HISPANICETHNICITY)
+
+mn_deaths %>% mutate(HISPANICETHNICITY_UPPER = str_to_upper(HISPANICETHNICITY)) %>% select(HISPANICETHNICITY, HISPANICETHNICITY_UPPER)
+
+mn_deaths %>% count(HISPANICETHNICITY_UPPER)
+
+mn_deaths <- mn_deaths %>% mutate(HISPANICETHNICITY_UPPER = str_to_upper(HISPANICETHNICITY))
+ 
+
+mn_deaths %>% mutate(HISPANICETHNICITY_PROPER = case_when(
+  HISPANICETHNICITY_UPPER=="NON-HISPANIC" ~ "NOT HISPANIC",
+  HISPANICETHNICITY_UPPER=="NOT-HISPANIC" ~ "NOT HISPANIC",
+  HISPANICETHNICITY_UPPER=="NOT HISPANIC" ~ "NOT HISPANIC",
+  HISPANICETHNICITY_UPPER=="HISPANIC" ~ "HISPANIC",
+  HISPANICETHNICITY_UPPER=="UNKNOWN" ~ "UNKNOWN"
+)) %>% 
+  count(HISPANICETHNICITY_PROPER)
+
+mn_deaths <- mn_deaths %>% mutate(HISPANICETHNICITY_PROPER = case_when(
+  HISPANICETHNICITY_UPPER=="NON-HISPANIC" ~ "NOT HISPANIC",
+  HISPANICETHNICITY_UPPER=="NOT-HISPANIC" ~ "NOT HISPANIC",
+  HISPANICETHNICITY_UPPER=="NOT HISPANIC" ~ "NOT HISPANIC",
+  HISPANICETHNICITY_UPPER=="HISPANIC" ~ "HISPANIC",
+  HISPANICETHNICITY_UPPER=="UNKNOWN" ~ "UNKNOWN"
+))
+                     
+```
+
+3.  convert BIRTDATE & DEATHDATE
+```{r}
+mn_deaths %>% select(BIRTHDATE, DEATHDATE)
+
+mn_deaths %>% mutate(NEWBIRTHDATE = mdy(BIRTHDATE)) %>% 
+  select(NEWBIRTHDATE, BIRTHDATE)
+
+mn_deaths %>% mutate(NEWDEATHDATE = mdy(DEATHDATE)) %>% 
+  select(NEWDEATHDATE, DEATHDATE)
+
+mn_deaths <- mn_deaths %>% mutate(NEWBIRTHDATE = mdy(BIRTHDATE), .after= BIRTHDATE) %>% 
+  mutate(NEWDEATHDATE = mdy(DEATHDATE), .after=DEATHDATE)
+```
+
+
+TASKS: `state_pop`
+
+1.  Reorganize the file so that you can calculate the percent change for each states population from 2018 to 2022. 
+```{r}
+glimpse(state_pop)
+
+ state_pop %>% pivot_wider(names_from=year, values_from=value)
+
+state_pop_wide <- state_pop %>% pivot_wider(names_from=year, values_from=value)
+
+```
+
+2.  Which state has increased the most? 
+Idaho increased most in population with a 9.5% percentage change. 
+```{r}
+state_pop_wide %>% 
+  arrange(NAME) %>% 
+  mutate(pct_change = ((`2022` - `2018`)/`2022`) * 100) %>% 
+  select(NAME, pct_change)
+
+# i tried to use the tipsheet that you have us for percent change but it did not seem correct for this problem? i used the formula on this site https://www.bls.gov/cpi/factsheets/calculating-percent-changes.htm#:~:text=To%20find%20the%20percent%20change,multiply%20the%20result%20by%20100.
+
+state_pop_wide %>% 
+  arrange(NAME) %>% 
+  mutate(pct_change = ((`2022` - `2018`)/`2022`) * 100) %>% 
+  select(NAME, pct_change) %>%  
+  arrange(desc(pct_change))
+  
+```
+
+3.  Which states have decreased in population? 
+According to the data, 7 states have decreased in population (Alaska, California, District of Columbia, Illinois, Louisiana, Mississippi, and West Virginia). 
+```{r}
+state_pop_wide %>% 
+  arrange(NAME) %>% 
+  mutate(pct_change = ((`2022` - `2018`)/`2022`) * 100) %>% 
+  select(NAME, pct_change) %>% 
+  filter(pct_change < 0)
+```
+
+4.  Where does Missouri rank? 
+Missouri ranks 40th of all the states, including D.C. and Puerto Rico, regarding population percentage change having the 40th largest increase in population (.83%).
+```{r}
+state_pop_wide %>% 
+  arrange(NAME) %>% 
+  mutate(pct_change = ((`2022` - `2018`)/`2022`) * 100) %>% 
+  select(NAME, pct_change) %>%  
+  filter(NAME == "Missouri")
+
+state_pop_wide %>% 
+  arrange(NAME) %>% 
+  mutate(pct_change = ((`2022` - `2018`)/`2022`) * 100) %>% 
+  select(NAME, pct_change) %>%  
+  arrange(desc(pct_change))
+```
+

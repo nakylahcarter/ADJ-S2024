@@ -1,0 +1,242 @@
+---
+title: "tidycensus"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(tidycensus)
+```
+
+```{r}
+age20 <- get_decennial(geography = "state", 
+                       variables = "P13_001N", 
+                       year = 2020,
+                       sumfile = "dhc")
+```
+```{r}
+mo <- get_acs(geography = "county", 
+              variables = c(medincome = "B19013_001"), 
+              state = "MO", 
+              year = 2022)
+```
+
+```{r}
+v22 <- load_variables(2022, "acs5", cache = TRUE)
+
+v22 %>% distinct(concept) %>% 
+  filter(str_detect(concept, "Plumbing"))
+
+v22 %>% 
+  filter(concept == "Tenure by Plumbing Facilities")
+```
+
+Pull all the variables from "Tenure by Plumbing Facilities" from MO
+```{r}
+get_acs(geography = "state", 
+              variables = c(total = "B25049_001", 
+                            owner_tot = "B25049_002", 
+                            owner_complete= "B25049_003", 
+                            owner_lacking= "B25049_004", 
+                            rent_tot= "B25049_005", 
+                            rent_complete= "B25049_006", 
+                            renter_lacking= "B25049_007"), 
+              state = "MO", 
+              year = 2022)
+
+#the nation
+get_acs(geography = "state", 
+              variables = c(total = "B25049_001", 
+                            owner_tot = "B25049_002", 
+                            owner_complete= "B25049_003", 
+                            owner_lacking= "B25049_004", 
+                            rent_tot= "B25049_005", 
+                            rent_complete= "B25049_006", 
+                            renter_lacking= "B25049_007"), 
+              year = 2022)
+```
+
+
+*Homework 2/28*
+
+1. Are there any counties in the US that have a median age below 30? How many? Which county has the highest median age?
+
+There are counties in the US that have a median age below 30, with many of them with very low margin of error. There are 52 counties listed that have a median age below 30 years old. The county that has the highest median age is Sumter County, Florida with a median age of 68.3 years old (0.2 margin of error).
+
+```{r}
+v22 <- load_variables(2022, "acs5", cache = TRUE)
+
+v22 %>% distinct(concept) %>% 
+  filter(str_detect(concept, "Median Age")) 
+
+v22 %>% 
+ filter (concept == "Median Age by Place of Birth in the United States")
+#Total median age by place of birth in the US: B06002_001
+
+#seeing if there are counties with a median age lower than 30
+get_acs(geography = "county", 
+              variables = c(medianage = "B06002_001"),
+              year = 2022) %>% 
+  arrange(estimate)
+
+#how many lower than 30?
+get_acs(geography = "county", 
+              variables = c(medianage = "B06002_001"),
+              year = 2022) %>% 
+  filter(estimate < "30")
+#52 rows
+
+# who has the highest median age
+get_acs(geography = "county", 
+              variables = c(medianage = "B06002_001"),
+              year = 2022) %>% 
+  arrange(desc(estimate))
+```
+
+
+
+2. What percentage of Missouri owner- and renter-occupied homes lack complete plumbing facilities? Are those percentages higher or lower than the national percentages? (hint: "us" is a geography)
+
+In Missouri, 0.4% of occupied owner- and renter-occupied homes lack complete plumbing facilities. This is only slightly over the national percentage of the national percentage of occupied owner- and renter-occupied homes lacking plumbing, with the US percentage at 0.39%. 
+(MO: 0.3967744, USA:0.003872237)
+
+```{r}
+get_acs(geography = "state", 
+              variables = c(total = "B25049_001", 
+                            owner_tot = "B25049_002", 
+                            owner_complete= "B25049_003", 
+                            owner_lacking= "B25049_004", 
+                            rent_tot= "B25049_005", 
+                            rent_complete= "B25049_006", 
+                            renter_lacking= "B25049_007"), 
+              state = "MO", 
+              year = 2022)
+
+#Total of occupied homes: 2458324, Total owned homes: 1661854, Total owned homes complete plumbing: 1656444, Total owned homes lacking plumbing: 5410, Renters total: 796470, Renters complete plumbing: 792156, Renters lacking plumbing: 4314) 
+
+5410+4314 # = 9724
+9754/2458324 # = 0.003967744 
+# 0.4% of MO occupied homes lack plumbing
+
+
+#the nation
+get_acs(geography = "us", 
+              variables = c(total = "B25049_001", 
+                            owner_tot = "B25049_002", 
+                            owner_complete= "B25049_003", 
+                            owner_lacking= "B25049_004", 
+                            rent_tot= "B25049_005", 
+                            rent_complete= "B25049_006", 
+                            renter_lacking= "B25049_007"), 
+              year = 2022)
+#Total of occupied homes: 125736353, Total owned homes: 81497760, Total owned homes complete plumbing: 81247774, Total owned homes lacking plumbing: 249986, Renters total: 44238593, Renters complete plumbing: 44001698, Renters lacking plumbing: 236895) 
+
+249986+236895 # = 486881
+486881/125736353 # = 0.003872237
+# 0.39% of US occupied homes lack plumbing
+
+```
+
+
+3. How many households don't have internet in MO? How does that compare to national percentages? (hint: table is "Internet Subscriptions in Household")
+
+According to the census data, 255,532 households in Missouri have no internet access. This is about 10.4% of the households in the state. The percentage of households in Missouri who do not have internet access is worse than that of the nation as a whole, with roughly 9% of all households in the United States without internet access. 
+
+```{r}
+v22 %>% 
+ filter (concept == "Internet Subscriptions in Household")
+# no internet access: B28011_008
+
+get_acs(geography = "state",
+        variables = c(total= "B28011_001", nointernet = "B28011_008"),
+        state = "MO",
+        year = 2022)
+# total households in MO = 2458324, total households in MO w/o internet = 255532
+
+255532/2458324 # = 0.1039456
+# 10.4%
+
+#nation
+get_acs(geography = "us",
+        variables = c(total= "B28011_001", nointernet = "B28011_008"),
+        year = 2022)
+# total households in US = 125736353, total households in US w/o internet = 11328375
+
+11328375/ 125736353 # = 0.09009626
+# 9%
+```
+
+
+4. Explore the tables in ACS 5-yr 2022 data to try to come up with an interesting sentence about Columbia or Missouri (or your home city or state).
+
+In Missouri, 258,202 people born in in the state were not U.S. citizens at birth, therefore, foreign-born. This population makes up 4% of all Missouri births. 
+
+(According to the census.gov, "The foreign-born population includes anyone who is not a U.S. citizen at birth, including those who become U.S. citizens through naturalization.")
+
+```{r}
+load_variables(2022, "acs5", cache = TRUE)
+
+#I went to data.census.gov to browse through data tables to see what were some of the things store than may be interesting
+v22 %>% distinct(concept) %>% 
+  filter(str_detect(concept, "Foreign-Born")) 
+
+v22 %>% 
+ filter (concept == "Place of Birth for the Foreign-Born Population in the United States")
+# total = B05006_001
+
+get_acs(geography= "state",
+        variable = "B05006_001",
+        state = "MO",
+        year = 2022)
+#258202 people in MO were foreign-born (not US citizens at the time of birth). 
+
+# how many people born in MO who are US natives
+v22 %>% distinct(concept) %>% 
+  filter(str_detect(concept, "Birth")) 
+
+v22 %>% 
+ filter (concept == "Place of Birth by Nativity and Citizenship Status")
+# B05002_001
+
+get_acs(geography= "state",
+        variable = "B05002_001",
+        state = "MO",
+        year = 2022)
+#6154422 people in MO were native-born (US citizens at the time of birth)
+
+6154422+258202 # = 6412624
+258202/6412624 # = 0.04026464
+# 4% of the population were foreign-born
+
+#TRYING TO FIND CITY OF COLUMBIA 
+
+get_acs(geography= "city",
+        variable = "B05006_001",
+        city = "Columbia",
+        year = 2022)
+# this didn't work, wanted to see what Columbia would be specifically. I ended up going back to the "get_acs" explainer website and I don't think we can find cities by name but by zip code? I tried it below. (I googled Columbia MO zips)
+
+get_acs(geography= "zcta",
+        variable = "B05006_001",
+        zcta = c(Columbia = "65201", 
+                 "65202", "65203", 
+                 "65205", "65211",
+                 "65212", "65215",
+                 "65216", "65217", "65218"),
+        year = 2022)
+#45280680 // yeah i dont think this is correct. the number is too high. 
+
+get_acs(geography= "zcta",
+        variable = "B05006_001",
+        zcta = c(Columbia = "65201"),
+        year = 2022)
+# i can find one area code at a time, but i am not sure how to find multiple? 
+
+#nation amount
+get_acs(geography= "us",
+        variable = "B05006_001",
+        year = 2022)
+#45280680 total people in the US were born in a foreign nation. 
+
+```
+

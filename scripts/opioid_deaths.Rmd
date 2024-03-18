@@ -1,0 +1,309 @@
+---
+title: "Opioid Deaths"
+output: 
+---
+
+Data from CDC Wonder:
+https://wonder.cdc.gov/controller/saved/D77/D377F998
+Grouped by State, Year
+1999-2020 (Multiple Cause of Death Final)
+
+
+```{r}
+library(tidyverse)
+library(janitor)
+```
+
+Load the data
+```{r}
+opioid_deaths <- read_delim("data/opioid_deaths.txt", delim = "\t")
+```
+
+Remove the notes from table
+```{r}
+notes <- opioid_deaths %>% 
+  filter(!is.na(Notes)) %>% 
+  select(Notes)
+
+opioid_deaths <- opioid_deaths %>% 
+  filter(is.na(Notes)) %>% 
+  select(-Notes)
+```
+
+Transform numbers
+```{r}
+opioid_deaths %>% 
+  count(Deaths) %>% 
+  arrange(desc(n))
+```
+
+Look at the "Suppressed" values 
+```{r}
+opioid_deaths %>% 
+  filter(Deaths == "Suppressed")
+```
+
+Create a numeric column for Deaths:
+```{r}
+opioid_deaths %>% 
+  mutate(num_deaths = parse_number(Deaths)) %>% 
+  arrange(desc(Deaths))
+
+opioid_deaths <- opioid_deaths %>% 
+  mutate(num_deaths = parse_number(Deaths))
+```
+
+Clean the column names
+```{r}
+opioid_deaths <- clean_names(opioid_deaths)
+```
+
+*Homework 2/8*
+
+1. Create a new column for the crude rate that is numeric
+```{r}
+opioid_deaths %>% 
+  mutate(num_cruderate = parse_number(crude_rate)) %>% 
+  arrange(desc(crude_rate))
+
+opioid_deaths <- opioid_deaths %>% 
+  mutate(num_cruderate = parse_number(crude_rate))
+```
+
+
+2. Run a check on both the year and state columns so that you know what data is included and whether it's messy
+```{r}
+opioid_deaths %>% 
+  select(year, state)
+#both characters for each column is correct 
+
+opioid_deaths %>% 
+  arrange(state) %>% 
+  select(year, state)
+# There is a row where some states have no year. 
+
+opioid_deaths %>% 
+  filter(is.na(year))
+#There is 51 rows of data that do not have year, but they do have a year code which is the same as the year column. 
+
+opioid_deaths %>% 
+  select(year, year_code) 
+ #1122 rows 
+
+opioid_deaths %>% 
+  select(year, year_code) %>% 
+  filter(year == year_code)
+#1071 rows where year code and year are the same. This makes sense because 51 rows in the year column do not have any values for the year. 
+
+opioid_deaths <- opioid_deaths %>% 
+  mutate(year_proper = year_code)
+#I created another column with the proper year to do calculations with. 
+
+range(opioid_deaths$year_proper)
+# The data set is the correct time frame. 
+
+opioid_deaths %>% 
+  select(state) %>% 
+  distinct()
+#There are 50 states, and D.C. in the data set. 
+
+```
+
+
+3. How many people died in total? (hint: all summary functions allow the `na.rm=T` argument to ignore NAs)
+
+There was 564421 total people who died of opioid deaths in the data set. 
+```{r}
+opioid_deaths %>% 
+  summarise(sum(num_deaths(na.rm = T)))
+#this didn't work
+
+opioid_deaths %>% 
+  summarise(sum(num_deaths), na.rm = T)
+#this didn't work
+
+opioid_deaths %>% 
+  summarise(sum(num_deaths), `na.rm = T`)
+#this didn't work 
+
+?summarise
+
+opioid_deaths %>% 
+  summarise(tot_deaths = sum(num_deaths), na.rm = T)
+#this didn't work
+
+opioid_deaths %>% 
+  summarise(tot_deaths = sum(num_deaths, na.rm = T))
+#I legit leaped when I figured this out! 
+
+#I wanted to figure out how many deaths specifically for 2020. 
+opioid_deaths %>% 
+  filter (year_proper == "2020") %>% 
+  summarise(tot2020deaths = sum(num_deaths))
+#68630 total deaths in 2020.
+
+    
+```
+
+4. Which state has the highest rate of opioid deaths in 2020? 
+
+West Virginia has the highest rate of opioid deaths in 2020 with a 63.3 crude rate.
+```{r}
+opioid_deaths %>% 
+  filter(year_proper == "2020") %>% 
+  select(state, year_proper, num_cruderate) %>% 
+  arrange(desc(num_cruderate))
+```
+
+
+5. Calculate the national death rate* (per 100,000) for each year: when did the death rate peak? (hint: you'll need to aggregate your data and create a new table; use mutate to create a rate column)
+
+The year 2020 had the highest death rate with 20.83 deaths per 100,000 people.
+
+```{r}
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "1999") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+
+#In 1999, there were 8031 total deaths. 
+ 
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2000") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2000, there were 8398 total deaths. 
+
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2001") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2001, there were 9474 total deaths. 
+
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2002") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2002, there were 11913 total deaths. 
+
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2003") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2003, there were 12917 total deaths.
+
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2004") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2004, there were 13756 total deaths.
+
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2005") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2005, there were 14910 total deaths.
+
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2006") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2006, there were 17541 total deaths.
+
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2007") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2007, there were 18516 total deaths.
+
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  filter (year == "2008") %>% 
+  summarise(n_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, n_deaths)
+#In 2008, there were 19582 total deaths.
+
+#total number of deaths each year
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  mutate(national_deaths = sum(num_deaths, na.rm = T)) %>% 
+  select(year_proper, national_deaths) %>% 
+  distinct(year_proper, national_deaths)
+#I realized this makes more sense. Found the number of deaths in total for each year. 
+opioid_deaths %>% 
+  filter(is.na(population))
+#Just wanted to check to make sure there was no N/A population value in the data set. 
+opioid_deaths %>% 
+  group_by(year_proper) %>% 
+  mutate(national_deaths = sum(num_deaths, na.rm = T), 
+         national_pop = sum(population)) %>% 
+  select(year_proper, national_deaths, national_pop) %>% 
+  distinct(year_proper, national_deaths, national_pop)
+#add the sum of population for each year
+
+national_death_rate <- opioid_deaths %>% 
+ group_by(year_proper) %>% 
+  mutate(national_deaths = sum(num_deaths, na.rm = T), 
+         national_pop = sum(population)) %>% 
+  select(year_proper, national_deaths, national_pop) %>% 
+  distinct(year_proper, national_deaths, national_pop)
+
+#RATE = (EVENTS / POPULATION ) * (“PER” Unit)
+
+national_death_rate %>% 
+  mutate(rate = (national_deaths/national_pop)* 100000) %>% 
+  arrange(desc(rate))
+#The year 2020 had the highest death rate with 20.83 deaths per 100,000 people. 
+
+national_death_rate <- national_death_rate %>% 
+  mutate(rate = (national_deaths/national_pop)* 100000) %>% 
+  arrange(desc(rate))
+```
+
+
+6. Calculate the death rate (per 100,000) for each state; which state has the highest death rate overall?
+
+West Virginia had the highest rate of opioid deaths with 23.32 deaths per 100,000 people.
+```{r}
+opioid_deaths %>% 
+  group_by(state) %>% 
+  mutate(state_deaths = sum(num_deaths, na.rm = T), 
+         state_pop = sum(population)) %>% 
+  select(state, state_deaths, state_pop) %>% 
+  distinct(state, state_deaths, state_pop) %>% 
+  arrange(desc(state_deaths))
+#California has the highest number of deaths total in the data set. 
+
+state_death_rates <- opioid_deaths %>% 
+  group_by(state) %>% 
+  mutate(state_deaths = sum(num_deaths, na.rm = T), 
+         state_pop = sum(population)) %>% 
+  select(state, state_deaths, state_pop) %>% 
+  distinct(state, state_deaths, state_pop) %>% 
+  arrange(desc(state_deaths))
+
+state_death_rates <- state_death_rates %>% 
+  mutate(rate = (state_deaths/state_pop)*100000) %>% 
+  arrange(desc(rate))
+#West Virginia had the highest rate of opioid deaths with 23.32 deaths per 100,000 people. 
+```
+
+
+7. Write a short graf that you might put into a story about opioid deaths: how would you characterize your findings? Include a citation for the data. 
+
+As the nation dealt with a slew of COVID-19 related deaths in 2020, another silent killer had rose to record numbers along the way: opioids. 
+
+Over 68,000 thousand Americans succumbed to opioid related deaths in 2020, a nearly 38% increase from the year before.(Line 235, found percent change= increase/original number * 100)  
+
+Nationally, opioid deaths rose to a rate of 20.8 deaths per 100,000 people, the highest it has ever been, according to data from CDC Wonder, with West Virginia accounting for the highest rate in any state. (Line 262, Line 294)
+
+(I'd probably add a quote right here)

@@ -1,0 +1,161 @@
+---
+title: "Bloomington, IN salaries"
+output: 
+---
+
+I opened the data with Visual Studio Code. The delimiter to the data is "|". There are 1200 rows in the data set. There are 8 columns of data. 
+
+```{r}
+library(tidyverse)
+library(lubridate)
+```
+
+Import data to R. How many rows? What is one row?
+```{r}
+?read_csv
+
+read_delim("data/bloomington_salaries.txt", delim = "|")
+
+# to better help me later on with loading data, i'm going to take the spaces out of the column names
+
+###LIZ: now you know, clean_names() from the janitor package can help with that!
+
+salaries <- read_delim("data/bloomington_salaries.txt", delim = "|")
+
+# From running this, I reinforce there are 1200 rows in the data set that are being read. Everything uploaded from the file. 
+```
+
+One row of data seems to be a singular employee's overall salary for a specific position they are in. 
+```{r}
+salaries %>% distinct()
+# Each of the 1200 rows are distinct and do not repeat. 
+
+salaries %>% 
+  count (`Name (last)`, `Name (first)`) %>% 
+  arrange (desc(n))
+#Emily Herr has two entries in the data set. She is the only one in the data set with two entries. 
+
+salaries %>% 
+  filter(`Name (first)`== "Emily" & `Name (last)` == "Herr")
+# Emily Herr has two job positions. She is an outreach coordinator in the Animal Care & Control Department and works in the Engineering Department as a public improvement manager. 
+```
+I can assume one row of data is one job position's salary and the person who obtains that job. 
+
+What is in every column? Do any of the columns contain messy or dirty data?
+
+Names Columns
+```{r}
+salaries %>% 
+  count (`Name (last)`, `Name (first)`) %>% 
+  arrange (desc(n))
+#Emily Herr has two entries in the data set. She is the only one in the data set with two entries. 
+
+salaries %>% 
+  filter (`Name (last)`== "Herr" & `Name (first)`== "Emily")
+```
+
+Department column
+```{r}
+salaries %>% 
+  count(Department) %>% 
+  arrange(desc(n))
+# Parks and Rec has the largest number of employee salaries in the data at 362. Police is second with 172 salaries listed and fire department is third with 119 salaries listed. All other departments have 50 salaries listed or less. Parks and Rec, Police, and Fire departments make up 653 of the 1200 entries. 
+
+unique(salaries$Department) 
+# I Googled how to find this. There are 39 different departments in the data. Three departments (Parks and Rec, Police, Fire) out of 39, make up over half of the employees in the data. 
+
+###LIZ: great work here. Worth noting that the Utilities department seems to be split into sub departments, the only one set up that way. 
+```
+
+Job Title Column
+```{r}
+salaries %>% 
+  count(`Job Title`) %>% 
+  arrange(desc(n))
+#What is FF1?
+
+unique(salaries$'Job Title')
+#There are 260 different job titles in the data set. 
+
+###LIZ: it's also good to look at these values in alphabetical order, to see if there are a lot of different spellings / nonstandardized entries: 
+salaries %>% 
+  count(`Job Title`) %>% 
+  arrange(`Job Title`)
+
+###LIZ: these aren't really messy or misspelled but there are a lot of variations for the job titles; that might make it hard to compare similar jobs.
+```
+
+Total compensation column 
+```{r}
+range(salaries$'Total Compensation')
+#$9.76 is the lowest compensated for one worker. 117,203.39 is the highest.
+
+salaries %>% 
+  arrange(`Total Compensation`) %>% 
+  select (Department, `Total Compensation`, `Job Title`)
+#A board member on the Board of Public Safety was compensated the smallest amount. 
+
+salaries %>% 
+  arrange(desc(`Total Compensation`)) %>% 
+  select (Department, `Total Compensation`, `Job Title`) 
+#The captain of the fire department was compensated the most. 
+```
+
+Overtime and Oncall Pay
+```{r}
+salaries %>% 
+  count(`Overtime and Oncall Pay`) %>% 
+  arrange(desc(n))
+# 454 of the 1200 job salaries also received overtime/on call pay. 
+
+salaries %>% 
+  arrange(desc(`Overtime and Oncall Pay`)) %>% 
+  select(`Overtime and Oncall Pay`, Department, `Job Title`, `Salary Rate`, `Hourly Rate`)
+# $41,158.08 was paid in overtime/on call pay to the senior police officer, the highest amount in the data set  
+```
+
+Hourly Rate & Salary Rate 
+```{r}
+salaries %>% 
+  filter('Hourly Rate' >= 0) %>% 
+  arrange(desc(`Hourly Rate`)) %>% 
+  select (`Hourly Rate`, `Job Title`, Department)
+#the highest hourly rate is $38, the lowest is $10. The Parks and Rec specialist has the highest hourly rate. 
+
+salaries %>% 
+  filter('Salary Rate' >= 0) %>% 
+  arrange(desc(`Salary Rate`)) %>% 
+  select (`Salary Rate`, `Job Title`)
+#the highest salary rate is $121,847, the lowest is $635. The highest salary rate is the Mayor, the lowest is a board member. 
+
+###LIZ: In your filter, your results will change if you put `Salary Rate` in back ticks - like it is in arrange() and select() - rather than single quotes. In single quotes R assumes that 'Salary Rate' is a value, not a column. By excluding values in `Salary Rate` that are greater than or equal to 0, you're essentially excluding NAs:
+salaries %>% 
+  filter(`Salary Rate` >= 0) %>% 
+  arrange(desc(`Salary Rate`)) %>% 
+  select (`Salary Rate`, `Job Title`)
+
+
+salaries %>% 
+  filter(`Job Title`== "Board Member") %>% 
+  select(Department, `Job Title`, `Total Compensation`, `Salary Rate`) %>% 
+  arrange(desc(`Total Compensation`))
+```
+
+Are all the data types correct?
+```{r}
+read_delim("data/bloomington_salaries.txt", delim = "|")
+
+#It seems that the data type for each column is appropriate for all.
+```
+
+
+5 questions about this data that you'd want to ask the person who created it for you?
+
+1. What is the time range for the data? 
+2. (This may be very well answered by the 1st question) Why are some board members with the same salary rate compensated more or less than board member's in the same position?
+3. When did each employee begin their job positions?
+4. What exactly is total compensation? Is it the amount of money given to date to the employees? Does include the overtime pay? 
+5. Why is overtime and oncall pay grouped in the same category? Would the data be different if they were in two different columns?
+
+
+**LIZ:** Good work here; your assessing is really thorough, and you have good command of the code. For the five questions, I was hoping for five questions you might ask *of* the data, not about the data, though your questions are good reporting questions. Some questions you might ask *of* the data: which department pays out the most in overtime? You found out who makes the most in overtime, but how does that compare to overtime as a percentage of total compensation? Which department has the lowest average hourly rate? Things like that. You've definitely done enough work here to complete this assignment, so I'm not expecting you to answer these questions and turn them in (though you can if you want feedback on them). 

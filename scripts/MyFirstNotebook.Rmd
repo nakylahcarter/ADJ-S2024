@@ -1,0 +1,20 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Let's create some variables to store in our environment.
+```{r}
+a <- 3
+b <- 5
+numbers <- c(1,2,3,4,5)
+values <- c("apples","oranges", "peaches")
+```
+
+Let's talk about functions. 
+function_name(arguments)
+```{r}
+sum(a,b)
+sum(numbers)
+```
+

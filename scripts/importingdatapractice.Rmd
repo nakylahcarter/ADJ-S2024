@@ -1,0 +1,27 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+Using read_csv, let's talk about functions: 
+```{r}
+#COLUMN NAMES
+read_csv("data/comodispatch.csv", 
+         col_names = c("col1", "col2", "col3", "col5", "col6"),
+         skip = 1)
+```
+
+Data type 
+```{r}
+read_csv("data/comodispatch.csv", col_types = "cTcccccc")
+
+read_csv("data/comodispatch.csv", col_types = cols(.default = "c"))
+
+read_csv("data/comodispatch.csv", col_types = cols(InNum = "c"))
+```
+
